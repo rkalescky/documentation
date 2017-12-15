@@ -1,8 +1,3 @@
-.. ManeFrame II Documentation documentation master file, created by
-   sphinx-quickstart on Mon Nov 20 10:07:33 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 ManeFrame II Documentation
 ==========================
 
@@ -14,9 +9,33 @@ Education and training focused on high-performance computing algorithms, softwar
 Formation of interdisciplinary research teams addressing cutting-edge applications.
 Rapid communication of faculty and student research accomplishments.
 
-Indices and tables
-==================
+Contents
+--------
+* :doc:`About <about>`
+* :doc:`Access <access>`
+* :doc:`Accounts <accounts>`
+* :doc:`Compiling <compiling>`
+* :doc:`Debugging and Profiling <debugging_profiling>`
+* :doc:`Modules <modules>`
+* :doc:`R <r>`
+* :doc:`SAS <sas>`
+* :doc:`Scripting <scripting>`
+* :doc:`Slurm <slurm>`
+* :doc:`UNIX <unix>`
+* :doc:`Usage <usage>`
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. toctree::
+
+   About <about>
+   Access <access>
+   Accounts <accounts>
+   Compiling <compiling>
+   Debugging and Profiling <debugging_profiling>
+   Modules <modules>
+   R <r>
+   SAS <sas>
+   Scripting <scripting>
+   Slurm <slurm>
+   UNIX <unix>
+   Usage <usage>
+

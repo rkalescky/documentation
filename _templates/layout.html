@@ -1,118 +1,223 @@
-{% extends "basic/layout.html" %}
-{% block extrahead %}
+{%- macro relbar() %}
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h4>{{ _('Pages') }}</h4>
+      <ul>
+        {%- for rellink in rellinks %}
+        <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
+          <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags|e }}"
+             {{ accesskey(rellink[2]) }}>{{ rellink[3] }}</a>
+          {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
+        {%- endfor %}
+        {%- block rootrellink %}
+        <li class="nav-item nav-item-0"><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
+        {%- endblock %}
+        {%- for parent in parents %}
+          <li class="nav-item nav-item-{{ loop.index }}"><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
+        {%- endfor %}
+        {%- block relbaritems %} {% endblock %}
+      </ul>
+    </div>
+{%- endmacro %}
+
+{%- macro sidebar() %}
+      {%- if render_sidebar %}
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+          {%- block sidebarlogo %}
+          {%- if logo %}
+            <p class="logo"><a href="{{ pathto(master_doc) }}">
+              <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
+            </a></p>
+          {%- endif %}
+          {%- endblock %}
+          {%- if sidebars != None %}
+            {#- new style sidebar: explicitly include/exclude templates #}
+            {%- for sidebartemplate in sidebars %}
+            {%- include sidebartemplate %}
+            {%- endfor %}
+          {%- else %}
+            {#- old style sidebars: using blocks -- should be deprecated #}
+            {%- block sidebartoc %}
+            {%- include "localtoc.html" %}
+            {%- endblock %}
+            {%- block sidebarrel %}
+            {%- include "relations.html" %}
+            {%- endblock %}
+            {%- block sidebarsourcelink %}
+            {%- include "sourcelink.html" %}
+            {%- endblock %}
+            {%- if customsidebar %}
+            {%- include customsidebar %}
+            {%- endif %}
+            {%- block sidebarsearch %}
+            {%- include "searchbox.html" %}
+            {%- endblock %}
+          {%- endif %}
+        </div>
+      </div>
+      {%- endif %}
+{%- endmacro %}
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>ManeFrame II Documentation - SMU</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="classification" content="">
-<meta name="subject" content="">
-<meta name="abstract" content="">
-<meta property="fb:page_id" content="7714241430"><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<script src="http://www.smu.edu/bootstrap/js/jquery.js"></script>
-<link href="http://www.smu.edu/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-<link href="http://www.smu.edu/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
-<link href="http://www.smu.edu/style/prodo/smu.css" rel="stylesheet" type="text/css" />
-<link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700" rel="stylesheet" type="text/css">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-<!--[if lt IE 9]>
-      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-<!-- 09/21/2016 --><!-- Start Page and subpage CSS from Main -->
-<!-- End Page and subpage CSS from Main -->
-<!--Do not this delete this SLATE tag. Tracks sitewide clickability for admissions stats, CG 08/15/2016-->
-<script async="async" src="https://admission.smu.edu/ping">/**/</script>
-<style type="text/css"></style><title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	<title>SMU Login Service</title>
+	<link href="https://idp.smu.edu/idp/images/favicon.ico" rel="shortcut icon">
+	<meta name="description" content="SMU Login Service"/>
 
-</title></head>
-{% endblock %}
-{% block header %}
-<div class="smuFixedTop" id="ctl3">
-  <div class="container-fluid masthead" id="ctl4">
-    <div class="row-fluid" id="ctl5">
-       <!-- <div class="span6 smuLogo">
-<a href="/"><img width="50" height="50" style="border: medium none;" src="_static/Logo-SMU-World.ashx?la=en&amp;hash=930A9054247C4523217DBAF5DD92F7DE130F6C84" alt="SMU Logo" /><img width="81" height="50" style="border: medium none;" src="_static/Logo-SMU-type.ashx?la=en&amp;hash=E40923B959E08494D74D2079D1A00EA0D455D48D" alt="SMU" /><img width="174" height="50" class="hidden-phone" style="border: medium none;" src="_static/Logo-SMU-Tagline.ashx?la=en&amp;hash=9676A5CA4DCAC955160A04FC0F386A2F83BBE227" alt="World Changers Shaped Here" /></a>  -->
-<div class="span6 smuLogo">
-<a href="/"><img width="296" height="50" alt="SMU: World Changers Shaped Here" src="_static/Logo-2016-WCSH-RW-Web-2x.png" /></a><!-- end mc field--></div><div class="span6 searchSocial" id="smus1">
-  <div class="smuSearch input-append">
-    <div class="form-search pull-right searchposition"><input onKeyDown="return SubmitSearch(this.value, 'default_collection', event)" id="q2" onFocus="if(this.value=='Search')this.value=''" value="Search" type="text" name="q2" class="input-small search-query"><button type="button" class="btn" id="sa2"  name="sa2"  value="Search" onclick="if(q2.value=='Search')q2.value='';location.href='http://search.smuext.net/search?proximity=rank&amp;suffixproc=min&amp;client=SMU_default&amp;proxystylesheet=SMU_default&amp;site=default_collection&amp;output=xml_no_dtd&amp;q=' + this.form.q2.value">    <i class="icon-search"></i></button>  
-</div>
-  </div><div class="smuSocialMedia" id="smusm1">
-<a href="http://facebook.com/smudallas" target="_blank" title="Facebook"><i class="icon-facebook"></i></a>&#160; <a href="http://twitter.com/smu/" target="_blank" title="Twitter"><i class="icon-twitter"></i></a>&#160; <a href="http://www.instagram.com/smudallas" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>&#160; <a href="http://www.linkedin.com/company/5515" target="_blank" title="LinkedIn"><i class="icon-linkedin"></i></a>&#160; <a href="http://www.youtube.com/user/SMUVideo" target="_blank" title="YouTube"><i class="icon-youtube-play"></i></a>&#160; <a href="http://www.smu.edu/AboutSMU/SocialMediaDirectory" title="Social Media Directory"><i class="icon-ellipsis-horizontal"></i></a>&nbsp; &nbsp; <a href="http://www.smu.edu/admission/apply/?utm_source=masthead&utm_medium=banner&utm_campaign=MastheadApply"><img alt="" src="_static/IconApply56x29.png" width="56" height="29" style="margin-top: -6px;" /></a>&nbsp; <a href="https://link.smu.edu/giving/smugiving/?utm_source=masthead&utm_medium=banner&utm_campaign=MastheadGiveNow&sc=DMEGNCALLALL1SLW1502"><img width="56" height="29" style="margin-top: -6px;" alt="Give Now" src="_static/IconGiveNow56x29.png" /></a>
-</div></div></div>
-<div id="smuContentWrapper">
-<div class="container-fluid" id="ctl14">
-{% endblock %}
-
-{% block footer %}
-</div>
-</div>
-<footer>
-                                                <!--BEGIN FOOTER-->
-                                                <div class="container-fluid">
-<div id="smuFooter">
-<div class="row-fluid">
-<div class="span6 identity">
-<div id="copyright"><a href="http://www.smu.edu/"><strong>&copy; Southern Methodist University</strong></a><br />
-PO Box 750100
-| Dallas, Texas | 75275-0100 | 214-768-2000<br />
-<a href="/AboutSMU/ContactSMU">Contact Us</a> | <a href="http://smu.edu/legal/">Legal Disclosures</a> | <a href="http://www.smu.edu/BusinessFinance/HR/WorkingatSMU">Working at SMU</a>  | <a href="http://smu.bncollege.com/" target="_blank">SMU Bookstore</a><br />
-<a href="http://facebook.com/smudallas" target="_blank" title="Facebook"><i class="icon-facebook"></i></a>&nbsp; <a href="http://twitter.com/smu/" target="_blank" title="Twitter"><i class="icon-twitter"></i></a>&#160; <a href="http://www.instagram.com/smudallas" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>&#160; <a href="http://www.linkedin.com/company/5515" target="_blank" title="LinkedIn"><i class="icon-linkedin"></i></a>&#160; <a href="http://www.youtube.com/user/SMUVideo" target="_blank" title="YouTube"><i class="icon-youtube-play"></i></a>&#160; <a href="http://www.smu.edu/AboutSMU/SocialMediaDirectory" title="Social Media Directory"><i class="icon-ellipsis-horizontal"></i></a>
-</div>
-<!-- /copyright -->
-</div>
-<!-- /span6 identity -->
-<div class="span6">
-<div id="links">
-<ul id="footerListRight">
-    <li> <a href="/InfoFor/Students">Students</a></li>
-    <li><a href="http://link.smu.edu/alumni">Alumni</a></li>
-    <li><a href="http://blog.smu.edu/forum">Faculty &amp; Staff</a></li>
-    <li><a href="http://blog.smu.edu/parents">Parents</a></li>
-</ul>
-<ul id="footerListLeft">
-    <li><a href="/InfoFor/Visitors">Visitors &amp; Community</a></li>
-    <li><a href="/News">News Media</a></li>
-    <li><a href="/Admission/EnEspanol">En Espa&ntilde;ol</a></li>
-    <li><a href="/Admission/Mandarin">中國語言網站</a></li>
-</ul>
-</div>
-<!-- /links -->
-</div>
-<!-- /span6 -->
-<div class="clearfix"></div>
-<!-- /clearfix -->
-</div>
-<!-- /row-fluid -->
-</div>
-<!-- /smuFooter -->
-</div>
-<!-- /container-fluid -->          
-</footer>
-<script src="/bootstrap/js/bootstrap.js"></script>
-
-<script language="javascript">
-$('.form-search input').click(function(e) {
-	e.stopPropagation();
-});
-$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
-</script>
-
-<script type="text/javascript" src="https://www.smu.edu/js/blueprint/smusearch.js"></script>
-<script src="/bootstrap/js/bootstrap-scrollspy.js"></script> 
-<script language="javascript">
-		  $('.carousel').carousel({
-    interval: 6000
-    });
-	</script>
-
-
-
+	<!-- load fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic,800italic,800,600italic,600" rel="stylesheet" type="text/css" />
+	
+	<!-- load SMU styles -->
+	<link rel="stylesheet" href="_static/smu.css"> 
+<script src="http://www.smu.edu/js/Main/jquery.min.js"></script>
 <script type="text/javascript">
-//<![CDATA[
-$(document).ready(function() {
-});
-//]]>
+   $(function() {
+
+       var $sidebar   = $("#security-text"), 
+           $window    = $(window),
+           offset     = $sidebar.offset(),
+           topPadding = 15;
+
+       $window.scroll(function() {
+           if ($window.scrollTop() > offset.top) {
+               $sidebar.stop().animate({
+                   marginTop: $window.scrollTop() - offset.top + topPadding
+               });
+           } else {
+               $sidebar.stop().animate({
+                   marginTop: 0
+               });
+           }
+       });
+    
+   });
 </script>
-{% endblock %}
+<script type="text/javascript">
+   function SubmitSearch(sVal, site, e) {
+     var keynum;
+     keynum = 0;
+
+     if(window.event) { 
+       keynum = e.keyCode;
+     }
+     else if(e.which) { 
+       keynum = e.which;
+     }
+     if (keynum == 13) {
+       //alert('keynum= ' + keynum);
+       document.location.href='http://search.smuext.net/search?proximity=rank&suffixproc=min&client=SMU_default&proxystylesheet=SMU_default&site='+ site +'&output=xml_no_dtd&q=' + sVal;
+       return false;	
+     }
+   }
+</script>
+   <!-- Place this tag in your head or just before your close body tag. -->
+   <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+<div id="container">
+ 
+    <header id="site-header">
+    <nav id="secondary-nav">
+    <div class="header-container">
+        <div class="header-row">
+        </div>
+    </div>
+    </nav>
+      
+    <div id="masthead">
+    <div class="header-container">
+        <div class="header-row">
+ 			<div id="site-brand">
+				<div class="site-title">
+					<a id="desktopimgLink" class="logo" href="http://www.smu.edu/">
+						<img id="dtImage" class="desktop-logo" src="https://idp.smu.edu/idp/smu-assets/Logo-SMU-WCSH-Stacked-RW-2x.png" alt="SMU logo: World Changers Shaped Here">   
+					</a>    
+				</div>
+			</div><!--/#site-brand-->
+			<div class="masthead-content">                 
+<div class="search-form">
+    <div class="search-form-group">
+        <div class="search-input-group" role="search">
+           <input onkeydown="return SubmitSearch(this.value, 'default_collection', event)" id="q2" onfocus="if(this.value=='Search')this.value=''" placeholder="Search" type="text" name="q2" class="smu-search-input search-query" aria-labelledby="Search the SMU website.">
+            <div class="search-input-group-addon" role="button" aria-label="Search"><i aria-hidden="true" class="fa fa-search"></i><span class="sr-only">Search</span></div>
+        </div>
+    </div>
+</div>
+			</div><!--/.masthead-content-->
+        </div><!--/.header-row-->
+    </div><!--/.header-container-->
+    </div><!--/#masthead-->
+    <nav id="main-nav">
+    <div class="header-container">
+        <div class="header-row">
+             <div id="main-menu-container">
+				<ul class="menu">
+					<li class="menu-item"><a href="http://www.smu.edu/academics/csc/#tab1" class="menu-link">Center for Scientific Computation</a></li>
+					<li class="menu-item"><a href="http://www.smu.edu/academics/csc/#tab2" class="menu-link">ManeFrame II (M2)</a></li>
+					<li class="menu-item"><a href="http://www.smu.edu/academics/csc/#tab3" class="menu-link">Accounts</a></li>
+					<li class="menu-item"><a href="http://www.smu.edu/academics/csc/#tab4" class="menu-link">Documentation</a></li>
+					<li class="menu-item"><a href="http://www.smu.edu/academics/csc/#tab5" class="menu-link">Workshops</a></li>
+					<li class="menu-item"><a href="http://www.smu.edu/academics/csc/#tab6" class="menu-link">Report Usage</a></li>
+				</ul>
+			</div><!--/#main-menu-container-->
+        </div><!--/.header-row-->
+    </div><!--/.header-container-->
+    </nav><!--/#main-nav-->
+    </header><!-- end of the header -->
+	
+	<div id="main-content" style="padding-top: 20px;">
+        <div class="content-container">
+			<div class="content-row">
+<div class="col-md-7" id="shib-login">
+{{ body }}
+</div>
+<div class="col-md-5" id="security-text">
+<div class="well">
+<h3>Support</h3>
+<ul>
+<li><a href="mailto:help@smu.edu">System Administration and Accounts</a></li>
+<li><a href="mailto:rkalescky@smu.edu">Usage and Applications</a></li>
+<li><a href="mailto:smuhpc-admins@smu.edu">Center for Scientific Computation</a></li>
+</ul>
+<h3>Sections</h3>
+{{ toc }}
+<h3>Engage</h3>
+<a class="github-button" href="https://github.com/rkalescky" aria-label="Follow @rkalescky on GitHub">Follow</a>
+<a class="github-button" href="https://github.com/rkalescky/documentation/subscription" data-icon="octicon-eye" aria-label="Watch rkalescky/documentation on GitHub">Watch</a>
+<a class="github-button" href="https://github.com/rkalescky/documentation/fork" data-icon="octicon-repo-forked" aria-label="Fork rkalescky/documentation on GitHub">Fork</a>
+<a class="github-button" href="https://github.com/rkalescky/documentation/issues" data-icon="octicon-issue-opened" aria-label="Issue rkalescky/documentation on GitHub">Issue</a>
+</div>
+</div>
+			</div><!--/content-row-->   			   
+           	
+		</div><!--/.content-container-->
+       
+    </div><!--/#main-content-->
+	<footer id="site-footer">
+	
+		<!-- ADDING CUSTOM SMU FOOTER -->
+		
+		<div id="site-info" role="contentinfo" aria-label="Directory Information">
+		<div class="footer-container">
+		<div class="footer-row">
+		<a href="http://www.smu.edu/" class="site-logo">
+			<img alt="SMU Logo" src="https://idp.smu.edu/idp/smu-assets/Logo-SMU-WCSH-Stacked-RW-2x.png" width="270" height="49">
+		</a>
+			<div class="smu-info">
+			<a href="http://www.smu.edu/AboutSMU/ContactSMU">Contact Us</a>
+			<a href="http://smu.edu/maps">Maps and Directions</a>
+			<a href="http://www.smu.edu/legaldisclosures">Legal Disclosures</a>
+			<address class="site-address">
+			&copy; Southern Methodist University, PO Box 750100, Dallas, TX 75275
+			</address>
+			</div><!--/.smu-info-->
+		</div><!--/.footer-row-->
+		</div><!--/.footer-container-->
+		</div><!--/#site-info-->
+	</footer>
+	</div><!--#container-->
+</body>
+</html>	

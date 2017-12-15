@@ -1,5 +1,7 @@
 .. _scripting:
 
+:tocdepth: 3
+
 Scripting
 #########
 

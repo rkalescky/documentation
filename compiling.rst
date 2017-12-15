@@ -1,5 +1,7 @@
 .. _compiling:
 
+:tocdepth: 3
+
 Compiling Programs
 ==================
 

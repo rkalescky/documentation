@@ -1,5 +1,7 @@
 .. _unix:
 
+:tocdepth: 3
+
 UNIX
 ####
 

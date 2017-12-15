@@ -1,5 +1,7 @@
 .. _development_tools:
 
+:tocdepth: 3
+
 Development Tools
 #################
 

@@ -1,5 +1,7 @@
 .. _applications:
 
+:tocdepth: 3
+
 Application Specific Instructions
 #################################
 

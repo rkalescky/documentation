@@ -1,5 +1,7 @@
 .. _about:
 
+:tocdepth: 3
+
 About
 #####
 

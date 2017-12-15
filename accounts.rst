@@ -1,5 +1,7 @@
 .. _accounts:
 
+:tocdepth: 3
+
 Accounts
 ########
 

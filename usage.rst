@@ -1,5 +1,7 @@
 .. _usage:
 
+:tocdepth: 3
+
 Usage
 #####
 

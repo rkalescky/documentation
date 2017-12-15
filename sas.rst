@@ -1,5 +1,7 @@
 .. _sas:
 
+:tocdepth: 3
+
 Running SAS on ManeFrame II
 ===========================
 

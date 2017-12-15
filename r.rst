@@ -1,5 +1,7 @@
 .. _r:
 
+:tocdepth: 3
+
 Running R on ManeFrame II
 =========================
 

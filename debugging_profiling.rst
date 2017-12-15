@@ -1,5 +1,7 @@
 .. _debugging_profiling:
 
+:tocdepth: 3
+
 Debugging Programs
 ==================
 

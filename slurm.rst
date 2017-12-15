@@ -1,5 +1,7 @@
 .. _slurm:
 
+:tocdepth: 3
+
 Slurm
 #####
 

@@ -110,6 +110,7 @@ html_static_path = ['_static']
 #    ]
 #}
 
+html_add_permalinks = None
 
 # -- Options for HTMLHelp output ------------------------------------------
 

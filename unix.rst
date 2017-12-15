@@ -1,5 +1,8 @@
 .. _unix:
 
+UNIX
+####
+
 Introduction to UNIX
 ====================
 
@@ -367,8 +370,8 @@ This may not seem very useful at first, but using ``.`` as the name of
 the current directory will save a lot of typing, as we shall see later
 in the tutorial.
 
-.. (the parent directory)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+``..`` (the parent directory)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The other "special" directory in UNIX, ``..``, refers to the parent of
 the current directory, so typing

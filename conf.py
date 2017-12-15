@@ -46,9 +46,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'ManeFrame II Documentation'
-copyright = u'2017, Robert Kalescky'
-author = u'Robert Kalescky'
+project = u'SMU CSC Documentation'
+copyright = u'2017, Southern Methodist University'
+author = u'Southern Methodist University'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

@@ -1,7 +1,7 @@
 .. _about:
 
 About
-=====
+#####
 
 SMU’s new high-performance compute cluster will dramatically increase
 the computational capacity and performance that SMU provides to its

@@ -16,16 +16,9 @@ Contents
 .. toctree::
 
    About <about>
-   Access <access>
    Accounts <accounts>
-   Development Tools <development_tools>
-   Compiling <compiling>
-   Debugging and Profiling <debugging_profiling>
-   Modules <modules>
-   R <r>
-   SAS <sas>
-   Scripting <scripting>
-   Slurm <slurm>
-   UNIX <unix>
+   Access <access>
    Usage <usage>
+   Applications <applications>
+   Development Tools <development_tools>
 

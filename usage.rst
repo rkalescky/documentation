@@ -1,5 +1,15 @@
 .. _usage:
 
+Usage
+#####
+
+.. toctree::
+
+   UNIX and Linux <unix>
+   Scripting <scripting>
+   Modules <modules>
+   Slurm <slurm>
+
 Here you can can fine information on how to effectively use ManeFrame
 II. For questions about using SMU's HPC resources or setting up
 `accounts <~/link.aspx?_id=0897B41E31514946ABE677FE00FAF843&_z=z>`__

@@ -1,5 +1,8 @@
 .. _scripting:
 
+Scripting
+#########
+
 Scripting with Bash and Python
 ==============================
 

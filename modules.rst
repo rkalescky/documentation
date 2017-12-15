@@ -1,7 +1,7 @@
 .. _modules:
 
 Modules
-=======
+#######
 
 The *module* system is a command-line tool to help users manage their
 Linux environment variables (e.g. ``PATH``, ``LD_LIBRARY_PATH``). It

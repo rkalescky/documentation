@@ -1,5 +1,8 @@
 .. _accounts:
 
+Accounts
+########
+
 Request an Account
 ==================
 

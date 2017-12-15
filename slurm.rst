@@ -1,5 +1,8 @@
 .. _slurm:
 
+Slurm
+#####
+
 Submitting Jobs Using Slurm
 ===========================
 

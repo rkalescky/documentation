@@ -1,5 +1,13 @@
 .. _development_tools:
 
+Development Tools
+#################
+
+.. toctree::
+
+   Compiling <compiling>
+   Debugging and Profiling <debugging_profiling>
+
 Makefiles
 ---------
 

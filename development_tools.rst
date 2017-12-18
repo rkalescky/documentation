@@ -7,8 +7,8 @@ Development Tools
 
 .. toctree::
 
-   Compiling <compiling>
-   Debugging and Profiling <debugging_profiling>
+   Compiling <development_tools/compiling>
+   Debugging and Profiling <development_tools/debugging_profiling>
 
 Makefiles
 ---------

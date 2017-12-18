@@ -24,4 +24,5 @@ Contents
    Applications <applications>
    Development Tools <development_tools>
    Frequently Asked Questions <faqs>
+   Workshops <workshops>
 

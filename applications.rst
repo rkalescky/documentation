@@ -10,6 +10,6 @@ Applications
 
 .. toctree::
 
-   R <r>
-   SAS <sas>
+   R <applications/r>
+   SAS <applications/sas>
 

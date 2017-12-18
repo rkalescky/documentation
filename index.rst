@@ -23,4 +23,5 @@ Contents
    Usage <usage>
    Applications <applications>
    Development Tools <development_tools>
+   Frequently Asked Questions <faqs>
 

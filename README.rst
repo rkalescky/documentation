@@ -14,4 +14,4 @@ Rapid communication of faculty and student research accomplishments.
 Contribute
 ----------
 
-Suggestions and corrections are wellcome as issues or pull requests.
+Suggestions and corrections are welcome as issues or pull requests.

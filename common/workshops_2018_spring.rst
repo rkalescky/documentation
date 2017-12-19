@@ -7,15 +7,15 @@ Workshops will be given weekly on Wednesday’s in Fondren Library East Room 110
 
 .. rst-class:: table
 
-=========== ==================================================
+=========== =====================================================
 Date        Workshop
-=========== ==================================================
+=========== =====================================================
 January 24  Introduction to ManeFrame II (M2)
 January 31  Using R on ManeFrame II (M2)
 February 07 Introduction to ManeFrame II (M2)
 February 14 Using SAS on ManeFrame II (M2)
 February 21 Introduction to Jupyter Notebooks
-February 28 Accessing Graphical Applications ManeFrame II (M2)
+February 28 Accessing Graphical Applications on ManeFrame II (M2)
 March 07    Introduction to ManeFrame II (M2)
 March 14    No Workshop (Spring Break)
 March 21    Using the NVIDIA P100 Nodes
@@ -24,4 +24,4 @@ April 04    Introduction to ManeFrame II (M2)
 April 11    Using the Intel Xeon Phi Nodes
 April 18    Parallel Python on ManeFrame II (M2)
 April 25    Tips for Automating Computational Workflows
-=========== ==================================================
+=========== =====================================================

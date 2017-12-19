@@ -26,3 +26,8 @@ Contents
    Frequently Asked Questions <faqs>
    Workshops <workshops>
 
+.. toctree::
+   :hidden:
+
+   ManeFrame II Maintenance History <maintenance>
+

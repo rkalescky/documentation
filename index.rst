@@ -25,6 +25,7 @@ Contents
    Development Tools <development_tools>
    Frequently Asked Questions <faqs>
    Workshops <workshops>
+   Testing <testing>
 
 .. toctree::
    :hidden:

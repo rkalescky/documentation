@@ -12,4 +12,5 @@ Applications
 
    R <applications/r>
    SAS <applications/sas>
+   STATA <applications/stata>
 

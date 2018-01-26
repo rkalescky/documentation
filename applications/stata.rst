@@ -18,6 +18,16 @@ following examples.
 
 .. include:: ../common/slurm_flag_table.rst
 
+.. note::
+
+   The STATA installation on ManeFrame II provides serial and parallel
+   versions. The commands to run the parallel versions are same as the
+   serial version, but with "-mp" appended, i.e. ``xstata-mp`` instead of
+   ``xstata``. Please do not run the parallel version via the "htc" queue
+   (see the table above). The examples below all serial versions of STATA
+   can be substituted with the parallel version provided an appropriate
+   queue is used.
+
 Running STATA Interactively with the Graphical User Interface
 -------------------------------------------------------------
 
@@ -33,9 +43,10 @@ forwarding and SFTP access.
 1. Log into the cluster using SSH with X11 forwarding enabled and run
    the following commands at the command prompt.
 2. ``module load stata`` to enable access to STATA
-3. ``srun -p <partition and options> --x11=first --pty stata`` where
+3. ``srun -p <partition and options> --x11=first --pty $SHELL`` where
    ``<partition and options>`` is the partition and associated Slurm
    flags for each partition outlined above.
+4. ``xstata &`` to launch STATA on the Slurm allocated resource.
 
 **Example:**
 

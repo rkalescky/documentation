@@ -73,6 +73,8 @@ II:
       of your SMU email address, followed by enter.
    #. At the command prompt, type your SMU password followed by enter.
 
+.. include:: ../common/ssh_key_setup.rst
+
 Accessing Files via SFTP
 ========================
 

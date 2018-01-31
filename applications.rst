@@ -10,6 +10,7 @@ Applications
 
 .. toctree::
 
+   MATLAB <applications/matlab>
    R <applications/r>
    SAS <applications/sas>
    STATA <applications/stata>

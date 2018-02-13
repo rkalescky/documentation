@@ -12,8 +12,8 @@ Date        Workshop
 =========== =====================================================
 January 24  `Introduction to ManeFrame II (M2)`_
 January 31  `Using R on ManeFrame II (M2)`_
-February 07 Introduction to ManeFrame II (M2)
-February 14 Using SAS on ManeFrame II (M2)
+February 07 `Introduction to ManeFrame II (M2)`_
+February 14 `Using SAS on ManeFrame II (M2)`_
 February 21 Introduction to Jupyter Notebooks
 February 28 Accessing Graphical Applications on ManeFrame II (M2)
 March 07    Introduction to ManeFrame II (M2)
@@ -28,3 +28,4 @@ April 25    Tips for Automating Computational Workflows
 
 .. _Introduction to ManeFrame II (M2): https://smu.box.com/s/59s2oyzknytvu6evy65snpf3n8i5g4m1
 .. _Using R on ManeFrame II (M2): https://smu.box.com/s/g01lq2aooxjgdzfyzsvcszjzgrjme9c9
+.. _Using SAS on ManeFrame II (M2): https://smu.box.com/s/4hnibisk6iu2hpdbcmnwthfedg9mna5i

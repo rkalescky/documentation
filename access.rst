@@ -19,8 +19,8 @@ Linux
 Specific instructions will vary by Linux distribution, but generally the
 steps are as follows.
 
-#. Open a \ *terminal*
-#. Type "ssh -CX yourusername@m2.smu.edu" where "yourusername" with your
+#. Open a terminal
+#. Type ``ssh -CX <your_username>@m2.smu.edu`` where ``<your_username>`` is your
    username, which is the first part of your SMU email address.
 
 Setting Up Key-Based Authentication
@@ -31,13 +31,20 @@ Setting Up Key-Based Authentication
 macOS
 -----
 
-macOS requires the one-time
-installation \ `XQuartz <https://www.xquartz.org>`__ to provide X11 for
-graphical applications. Once XQuartz is installed, steps are generally
-as follows.
+macOS requires the one-time installation of
+`XQuartz <https://www.xquartz.org>`__ to provide X11 for graphical
+applications.
+
+#. Install `XQuartz <https://www.xquartz.org>`_
+#. Log out and back into the Mac or reboot
+#. Open the Terminal app at ``/Applications/Utilities/Terminal.app``
+#. Run the command ``defaults write org.macosforge.xquartz.X11 enable_iglx -bool true``
+   to enable `indirect GLX <https://en.wikipedia.org/wiki/AIGLX>`_, which is disabled by default
+
+The SSH steps are generally as follows:
 
 #. Open the Terminal app at "/Applications/Utilities/Terminal.app"
-#. Type "ssh -CX yourusername@m2.smu.edu" where "yourusername" is your
+#. Type ``ssh -CX <your_username>@m2.smu.edu`` where ``<your_username>`` is your
    username, which is the first part of your SMU email address.
 
 Setting Up Key-Based Authentication

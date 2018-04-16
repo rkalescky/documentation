@@ -23,6 +23,11 @@ steps are as follows.
 #. Type "ssh -CX yourusername@m2.smu.edu" where "yourusername" with your
    username, which is the first part of your SMU email address.
 
+Setting Up Key-Based Authentication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: common/ssh_key_setup_unix.rst
+
 macOS
 -----
 
@@ -34,6 +39,11 @@ as follows.
 #. Open the Terminal app at "/Applications/Utilities/Terminal.app"
 #. Type "ssh -CX yourusername@m2.smu.edu" where "yourusername" is your
    username, which is the first part of your SMU email address.
+
+Setting Up Key-Based Authentication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: common/ssh_key_setup_unix.rst
 
 Windows
 -------
@@ -73,7 +83,11 @@ II:
       of your SMU email address, followed by enter.
    #. At the command prompt, type your SMU password followed by enter.
 
-.. include:: ../common/ssh_key_setup.rst
+
+Setting Up Key-Based Authentication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: common/ssh_key_setup_putty.rst
 
 Accessing Files via SFTP
 ========================

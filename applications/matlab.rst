@@ -3,7 +3,7 @@
 :tocdepth: 3
 
 Running MATLAB on ManeFrame II
-=============================
+==============================
 
 Types of Nodes On Which MATLAB Is to Run
 ----------------------------------------
@@ -47,11 +47,261 @@ forwarding and SFTP access.
 Running MATLAB Graphical User Interface Locally and Issuing Computations to ManeFrame II
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-ManeFrame II (M2) has `MATLAB Distributed Computing Server (DCS)<https://www.mathworks.com/products/distriben.html>`_ installed with enables MATLAB users to issue commands from their local MATLAB installation and have those commands run on M2. However, to be able to do this several criteria first need to be met.
+ManeFrame II (M2) has `MATLAB Distributed Computing Server (DCS) <https://www.mathworks.com/products/distriben.html>`__ installed with enables MATLAB users to issue commands from their local MATLAB installation and have those commands run on M2. However, to be able to do this several criteria first need to be met.
 
 #. The local (your machine) MATLAB installation needs to be MATLAB R2017a
-#. The MATLAB DCS integration scripts need to be locally installed
 #. SSH key based authentication to M2 must be setup
+#. The MATLAB DCS integration scripts need to be locally installed
+#. Configuring jobs and computations
+
+These are discussed each in turn in the following sections.
+
+MATLAB Installation
+^^^^^^^^^^^^^^^^^^^
+
+Setting Up SSH Keys for Passwordless Access
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Linux and macOS (and Other UNIX-Like Environments)
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+.. include:: ../common/ssh_key_setup_unix.rst
+
+Windows Using Putty
+"""""""""""""""""""
+
+.. include:: ../common/ssh_key_setup_putty.rst
+
+MATLAB DCS Integration Script Installation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Add the MATLAB integration scripts to your MATLAB Path by placing the integration scripts into ``$MATLAB/toolbox/local``.
+
+Configuring Jobs and Computation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Prior to submitting the job, we can specify various parameters to pass
+to our jobs, such as queue, username, e-mail, etc. Note that any parameters specified using the below workflow will be
+persistent between MATLAB sessions.
+
+.. code:: matlab
+
+   % Get a handle to the cluster
+   c = parcluster;
+   % Specify a particular queue to use for MATLAB jobs
+   c.AdditionalProperties.QueueName = ‘queue’;
+   % Specify e-mail address to receive notifications about your job
+   c.AdditionalProperties.EmailAddress = ‘test@foo.com’;
+   % Specify the walltime
+   c.AdditionalProperties.WallTime = '00:10:00';
+   % Request GPUs – this will automatically submit to the GPU queue
+   c.AdditionalProperties.UseGpu = true;
+   % Specify memory per core/worker to use
+   c.AdditionalProperties.MemUsage = ‘4GB’;
+   % Specify if your private key/identity file requires a passphrase by default, it is set to false
+   c.AdditionalProperties.FileHasPassphrase = true;
+   % Save changes after modifying AdditionalProperties fields.
+   c.saveProfile
+
+To see the values of the current configuration options, call the
+specific AdditionalProperties name.
+
+.. code:: matlab
+
+   % To view current configurations
+   c.AdditionalProperties.QueueName
+
+To clear a value, assign the property an empty value (‘’, [], or false).
+
+.. code:: matlab
+
+   % To clear a configuration that takes a string as input
+   c.AdditionalProperties.EmailAddress = ‘ ’
+
+**Serial Jobs**
+
+Use the batch command to submit asynchronous jobs to the cluster. The
+batch command will return a job object which is used to access the
+output of the submitted job. See the MATLAB documentation for more help
+on batch.
+
+.. code:: matlab
+
+   % Get a handle to the cluster
+   c = parcluster;
+   % Submit job to query where MATLAB is running on the cluster
+   j = c.batch(@pwd, 1, {});
+   % Query job for state
+   j.State
+   % If state is finished, fetch results
+   j.fetchOutputs{:}
+   % Delete the job after results are no longer needed
+   j.delete
+
+To retrieve a list of currently running or completed jobs, call
+`parcluster` to retrieve the cluster object. The cluster object stores an
+array of jobs that were run, are running, or are queued to run. This
+allows us to fetch the results of completed jobs. Retrieve and view the
+list of jobs as shown below.
+
+.. code:: matlab
+
+   c = parcluster;
+   jobs = c.Jobs
+
+Once we’ve identified the job we want, we can retrieve the results as
+we’ve done previously.
+
+fetchOutputs is used to retrieve function output arguments; if using
+batch with a script, use load instead. Data that has been written to
+files on the cluster needs be retrieved directly from the file system.
+
+To view results of a previously completed job:
+
+.. code:: matlab
+
+   % Get a handle on job with ID 2
+   j2 = c.Jobs(2);
+
+NOTE: You can view a list of your jobs, as well as their IDs, using the
+above c.Jobs command.
+
+.. code:: matlab
+
+   % Fetch results for job with ID 2
+   j2.fetchOutputs{:}
+   % If the job produces an error view the error log file
+   c.getDebugLog(j.Tasks(1))
+
+NOTE: When submitting independent jobs, with multiple tasks, you will
+have to specify the task number.
+
+**PARALLEL JOBS**
+
+Users can also submit parallel workflows with batch. Let’s use the
+following example for a parallel job.
+
+We’ll use the batch command again, but since we’re running a parallel
+job, we’ll also specify a MATLAB Pool.
+
+.. code:: matlab
+
+   % Get a handle to the cluster
+   c = parcluster;
+   % Submit a batch pool job using 4 workers for 16 simulations
+   j = c.batch(@parallel_example, 1, {}, ‘Pool’, 4);
+   % View current job status
+   j.State
+   % Fetch the results after a finished state is retrieved
+   j.fetchOutputs{:}
+   
+   ans =
+   
+   8.8872
+
+The job ran in 8.8872 seconds using 4 workers. Note that these jobs will
+always request N+1 CPU cores, since one worker is required to manage the
+batch job and pool of workers. For example, a job that needs eight
+workers will consume nine CPU cores.
+
+We’ll run the same simulation, but increase the Pool size. This time, to
+retrieve the results at a later time, we’ll keep track of the job ID.
+
+NOTE: For some applications, there will be a diminishing return when
+allocating too many workers, as the overhead may exceed computation
+time.
+
+.. code:: matlab
+
+   % Get a handle to the cluster
+   c = parcluster;
+   % Submit a batch pool job using 8 workers for 16 simulations
+   j = c.batch(@parallel_example, 1, {}, ‘Pool’, 8);
+   % Get the job ID
+   id = j.ID
+   Id =
+   
+   4
+
+   % Clear workspace, as though we quit MATLAB
+   clear j
+
+Once we have a handle to the cluster, we’ll call the findJob method to
+search for the job with the specified job ID.
+
+.. code:: matlab
+
+   % Get a handle to the cluster
+   c = parcluster;
+   % Find the old job
+   j = c.findJob(‘ID’, 4);
+   % Retrieve the state of the job
+   j.State
+   
+   ans
+   
+   finished
+   
+   % Fetch the results
+   j.fetchOutputs{:};
+   
+   ans =
+   
+   4.7270
+   
+   % If necessary, retrieve output/error log file
+   c.getDebugLog(j)
+
+The job now runs 4.7270 seconds using 8 workers. Run code with different
+number of workers to determine the ideal number to use.
+
+Alternatively, to retrieve job results via a graphical user interface,
+use the Job Monitor (Parallel > Monitor Jobs).
+
+**DEBUGGING**
+
+If a serial job produces an error, we can call the getDebugLog method to
+view the error log file.
+
+.. code:: matlab
+
+   j.Parent.getDebugLog(j.Tasks(1))
+
+When submitting independent jobs, with multiple tasks, you will have to
+specify the task number. For Pool jobs, do not deference into the job
+object.
+
+.. code:: matlab
+
+   j.Parent.getDebugLog(j)
+
+The scheduler ID can be derived by calling schedID
+
+.. code:: matlab
+
+   schedID(j)
+   
+   ans
+   
+   25539
+
+**TO LEARN MORE**
+
+To learn more about the MATLAB Parallel Computing Toolbox, check out
+these resources:
+
+* `Parallel Computing Coding
+  Examples <http://www.mathworks.com/products/parallel-computing/code-examples.html>`__
+* `Parallel Computing
+  Documentation <http://www.mathworks.com/help/distcomp/index.html>`__
+* `Parallel Computing
+  Overview <http://www.mathworks.com/products/parallel-computing/index.htmlhttp:/www.mathworks.com/products/parallel-computing/index.html>`__
+* `Parallel Computing
+  Tutorials <http://www.mathworks.com/products/parallel-computing/tutorials.html>`__
+* `Parallel Computing
+  Videos <http://www.mathworks.com/products/parallel-computing/videos.html>`__
+* `Parallel Computing
+  Webinars <http://www.mathworks.com/products/parallel-computing/webinars.html>`__
 
 Running MATLAB Non-Interactively in Batch Mode
 ----------------------------------------------
@@ -139,10 +389,11 @@ job when the job is executed by Slurm.
    partition and flags, MATLAB script file name, and number of jobs that
    will be executed as required for your specific calculation.
 
-.. literalinclude:: ../examples/matlab/matlab_array_example.sbatch
+.. literalinclude:: ../examples/matlab/matlab_example_array.sbatch
    :language: bash
 
 5. ``sbatch <descriptive file name>`` where ``<descriptive file name>``
    is the Sbatch script name chosen previously.
 6. ``squeue -u $USER`` to verify that the job has been submitted to the
    queue.
+

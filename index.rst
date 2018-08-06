@@ -23,6 +23,7 @@ Contents
    Usage <usage>
    Applications <applications>
    Development Tools <development_tools>
+   Archive <archive>
    Frequently Asked Questions <faqs>
    Workshops <workshops>
 

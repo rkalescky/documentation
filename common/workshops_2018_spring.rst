@@ -1,9 +1,7 @@
 Spring 2018
 ===========
 
-The Spring 2018 CSC workshop series will provide a hands-on experience that will guide researchers from the basics of using SMU’s supercomputing resources to advanced parallelization and application specific usage. The topics will cover information useful for researchers to quickly begin to use the new compute capabilities provided with the new cluster. New users are encouraged to take advantage of the introductory "Introduction to ManeFrame II (M2)" workshop that will be given once monthly during the semester.
-
-Workshops will be given weekly on Wednesday’s in Fondren Library East Room 110 from 12:00 to 2:00 PM. Register `here <https://smu.az1.qualtrics.com/jfe/form/SV_bfTJwVQR7pGu8UB>`_!
+Workshops were given weekly on Wednesday’s in Fondren Library East Room 110 from 12:00 to 2:00 PM.
 
 .. rst-class:: table
 

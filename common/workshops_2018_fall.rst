@@ -23,6 +23,6 @@ October 24   MPI Introduction
 October 31   Open Help Session
 November 7   ManeFrame II (M2) Introduction
 November 14  Parallel Python on M2
-November 21  No Workshop(Thanksgiving)
+November 21  No Workshop (Thanksgiving)
 November 28  Open Help Session
 ============ ========================================================

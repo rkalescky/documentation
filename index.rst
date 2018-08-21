@@ -24,6 +24,7 @@ Contents
    Applications <applications>
    Development Tools <development_tools>
    Archive <archive>
+   Faculty Partnership Program <faculty_partnership_program>
    Frequently Asked Questions <faqs>
    Workshops <workshops>
 

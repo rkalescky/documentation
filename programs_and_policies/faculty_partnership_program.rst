@@ -1,7 +1,3 @@
-.. _faculty_partnership_program:
-
-:tocdepth: 3
-
 Faculty Partnership Program
 ===========================
 

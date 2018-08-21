@@ -1,7 +1,3 @@
-.. _archive:
-
-:tocdepth: 3
-
 Policies for Archival Storage
 ==============================
 

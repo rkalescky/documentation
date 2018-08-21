@@ -23,6 +23,7 @@ Contents
    Usage <usage>
    Applications <applications>
    Development Tools <development_tools>
+   Members <members>
    Archive <archive>
    Faculty Partnership Program <faculty_partnership_program>
    Frequently Asked Questions <faqs>

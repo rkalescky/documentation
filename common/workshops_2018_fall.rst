@@ -10,7 +10,7 @@ Workshops will be given weekly on Wednesday's in Fondren Library East Room 110 f
 ============ ========================================================
 Date         Workshop
 ============ ========================================================
-August 22    ManeFrame II (M2) Introduction
+August 22    `ManeFrame II (M2) Introduction`_
 August 29    Open Help Session
 September 5  ManeFrame II (M2) Introduction
 September 12 Parallel R on M2
@@ -26,3 +26,6 @@ November 14  Parallel Python on M2
 November 21  No Workshop (Thanksgiving)
 November 28  Open Help Session
 ============ ========================================================
+
+.. _ManeFrame II (M2) Introduction: https://smu.box.com/s/k5ybqqjyu4iidavaul6izpagage5nu3x
+

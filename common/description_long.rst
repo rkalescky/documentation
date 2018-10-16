@@ -39,6 +39,8 @@ their work.
 | Operating System            | Scientific Linux 6  | CentOS 7              |
 +-----------------------------+---------------------+-----------------------+
 
+.. _standard_nodes:
+
 Standard-, Medium-, and High- Memory Compute Nodes
 --------------------------------------------------
 
@@ -58,6 +60,8 @@ cluster. The new and more efficient architecture, high core count, and
 high memory capacities of these nodes will provide significant
 improvements to existing computationally or memory intensive workflows.
 
+.. _p100_nodes:
+
 Accelerator Nodes with NVIDIA GPUs
 ----------------------------------
 
@@ -71,6 +75,8 @@ ever-broadening set of drop-in replacement libraries and ever easier to
 implement CUDA-based programming environments, make GPU-based
 acceleration significantly more approachable for many computationally
 intensive applications.
+
+.. _knl_nodes:
 
 Many-Core Nodes with Intel Xeon Phi Processors
 ----------------------------------------------
@@ -124,3 +130,44 @@ space with a write performance of 56.4 GB/s and read performance of 70.8
 GB/s, when used in parallel. The third storage system is 110 TB of
 usable disk based archive space that includes off-site backup for
 disaster recovery.
+
+Faculty Partner Nodes
+---------------------
+
+.. include:: /common/faculty_partnership_purpose.rst
+
+See :ref:`Programs and Policies <programs_and_policies>` for more information.
+
+.. _fp_hagstrom:
+
+Professor Thomas Hagstrom (Mathematics)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Professor Hagstrom has one node that is available as port of M2. This node has
+dual Intel Xeon E5-2680v3 2.50 GHz 12-core "Sandy Bridge" processors, 128 GB of
+memory, and quad NVIDIA K80 GPU accelerators. Each GPU has 4,992 CUDA cores and
+24 GB of GDDR5 memory.
+
+The queue for these nodes, ``fp-gpgpu-2``, is generally available to M2 users.
+
+.. _fp_minsker:
+
+Professor Barbara Minsker (Civil and Environmental Engineering)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Professor Minsker has two nodes that are availabe as part of M2. These nodes
+each have dual Intel Xeon Gold 6148 2.40 GHz 20-core "Skylake" processors, 384
+GB of memory, dual NVIDIA V100 GPU accelerators, and 2 TB of local RAID scratch
+space. Each GPU has 5,120 CUDA cores, 640 Tensor cores, and 32 GB CoWoS HBM2
+memory. The V100 GPU is based on the Volta architecture and an extremely high
+bandwidth (900 GB/s) stacked memory architecture.
+
+The queue for these nodes, ``fp-gpgpu-3``, is generally available to M2 users
+with the following restrictions.
+
+* The maximum job duration for users not in Dr. Minsker's group is 24 hours
+* There is no maximum job duration for users in Dr. Minsker's group when the
+  ``--qos qos_clowder`` Slurm flag is used
+* Jobs submitted without the ``--qos qos_clowder`` flag may be queued
+  indefinitely until jobs submitted with the flag finish
+

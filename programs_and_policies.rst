@@ -5,6 +5,6 @@
 Programs and Policies
 #####################
 
-.. include:: programs_and_policies/faculty_partnership_program.rst
-.. include:: programs_and_policies/archive.rst
+.. include:: common/faculty_partnership_program.rst
+.. include:: common/archive.rst
 

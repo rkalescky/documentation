@@ -27,8 +27,8 @@ September 19 Using Spack for Development
 September 26 Open Help Session
 October 3    `ManeFrame II (M2) Introduction`_
 October 10   `OpenMP Introduction`_
-October 17   OpenACC Introduction
-October 24   MPI Introduction
+October 17   `OpenACC Introduction`_
+October 24   `MPI Introduction`_
 October 31   Open Help Session
 November 7   ManeFrame II (M2) Introduction
 November 14  Parallel Python on M2
@@ -39,4 +39,6 @@ November 28  Open Help Session
 .. _ManeFrame II (M2) Introduction: https://smu.box.com/s/k5ybqqjyu4iidavaul6izpagage5nu3x
 .. _Parallel R on M2: https://smu.box.com/s/o2xunw6lfznojqi568o0menca5tdjvt0
 .. _OpenMP Introduction: https://smu.box.com/s/x00il3jtuprw21m0syyvryla5yuk77cr
+.. _OpenACC Introduction: https://smu.box.com/s/nnk9rcnzgu9vj4b7dtd3ap6ihf4zg2fj
+.. _MPI Introduction: https://smu.box.com/s/hgvmcw88wbwtb2xv9x2cyar8tvfk1t5u
 

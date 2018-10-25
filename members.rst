@@ -33,6 +33,7 @@ Faculty
 * `Jose Lage <https://www.smu.edu/Lyle/AboutUs/ContactsandDirectories/LageJose>`_ (Mechanical Engineering)
 * `Eric Larson <https://s2.smu.edu/~eclarson/index.html>`_ (Computer Science and Engineering)
 * `Barry Lee <https://www.smu.edu/Dedman/Academics/Departments/Math/People/Faculty/BarryLee>`_ (Mathematics)
+* `Devin Matthews <https://matthewsresearchgroup.webstarts.com>`_ (Chemistry)
 * `Monnie McGee <http://faculty.smu.edu/mmcgee/>`_ (Statistics)
 * `Amnon J. Meir <https://www.smu.edu/Dedman/Academics/Departments/Math/People/Faculty/AmnonMeir>`_ (Mathematics)
 * `Tony Ng <http://faculty.smu.edu/ngh/>`_ (Statistics)

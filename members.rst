@@ -51,6 +51,11 @@ Faculty
 * `James Quick <http://www.smu.edu/AboutSMU/Administration/Dean-ORGS.aspx>`_ (Earth Sciences)
 * `Daniel Reynolds <http://faculty.smu.edu/reynolds/>`_ (Mathematics)
 * `Steve Sekula <http://www.physics.smu.edu/sekula/>`_ (Physics)
+* `Michael Sposi <https://sites.google.com/site/michaelsposi/research>`_ (Economics)
+
+  My work explores quantitative effects of international trade on macroeconomic
+  outcomes.
+
 * `Peng Tao <http://faculty.smu.edu/ptao>`_ (Chemistry)
 * `Johannes Tausch <http://faculty.smu.edu/tausch/>`_ (Mathematics)
 * `Mitch Thornton <http://lyle.smu.edu/~mitch/>`_ (Computer Science and Engineering; Electrical Engineering)

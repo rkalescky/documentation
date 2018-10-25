@@ -34,6 +34,13 @@ Faculty
 * `Eric Larson <https://s2.smu.edu/~eclarson/index.html>`_ (Computer Science and Engineering)
 * `Barry Lee <https://www.smu.edu/Dedman/Academics/Departments/Math/People/Faculty/BarryLee>`_ (Mathematics)
 * `Devin Matthews <https://matthewsresearchgroup.webstarts.com>`_ (Chemistry)
+
+  Our group focuses on using and developing accurate theoretical methods to
+  study molecules, reactions, clusters, and extended systems. In particular, we
+  specialize in *ab initio* (meaning "from the beginning") methods based on quantum
+  mechanics, combining concepts and techniques from chemistry, physics,
+  mathematics, and computer science.
+
 * `Monnie McGee <http://faculty.smu.edu/mmcgee/>`_ (Statistics)
 * `Amnon J. Meir <https://www.smu.edu/Dedman/Academics/Departments/Math/People/Faculty/AmnonMeir>`_ (Mathematics)
 * `Tony Ng <http://faculty.smu.edu/ngh/>`_ (Statistics)

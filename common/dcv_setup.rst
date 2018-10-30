@@ -21,13 +21,14 @@ Connecting to a DCV Desktop Instance
 
 Once the local DCV client application is installed you can launch a desktop
 instance on one of M2’s DCV nodes via the `portal website
-<https://portal.m2.smu.edu:18443/ef/>`__. You can log into the portal using
-your SMU credentials (SMU/M2 username and password). Once logged in, select
-"DCV XFCE Linux Desktop" in the panel on the left side of the page to start a
-new desktop instance. You may be prompted to download a DCV connection file.
-Once the file is downloaded you can open it via the NICE DCV Endstation client
-application already installed on your machine, which will connect you to your
-desktop instance. If you are prompted with a signature warning dialog box,
+<https://portal.m2.smu.edu:18443/ef/>`__; you will need to use `SMU's VPN
+<https://vpn.smu.edu/>`__ if you are off campus. You can log into the portal
+using your SMU credentials (SMU/M2 username and password). Once logged in,
+select "DCV XFCE Linux Desktop" in the panel on the left side of the page to
+start a new desktop instance. You may be prompted to download a DCV connection
+file.  Once the file is downloaded you can open it via the NICE DCV Endstation
+client application already installed on your machine, which will connect you to
+your desktop instance. If you are prompted with a signature warning dialog box,
 select yes. Depending on the application running, selecting "Scale to window
 size" in the Preferences may be beneficial.
 

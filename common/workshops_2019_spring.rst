@@ -1,10 +1,10 @@
-Fall 2018
-=========
+Spring 2019
+===========
 
-The Fall 2018 CSC workshop series will provide a hands-on experience that will
+The Spring 2019 CSC workshop series will provide a hands-on experience that will
 guide researchers from the basics of using SMU's supercomputing resources to
 advanced parallelization and application specific usage. The topics will cover
-information useful for researchers to quickly begin to use the new compute
+information useful for researchers to quickly begin to use the advanced compute
 capabilities provided with the cluster. New users are encouraged to take
 advantage of the introductory "Introduction to ManeFrame II (M2)" workshop that
 will be given once monthly during the semester. Users are encourged to stop by

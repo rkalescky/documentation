@@ -1,0 +1,39 @@
+Fall 2018
+=========
+
+The Fall 2018 CSC workshop series will provide a hands-on experience that will
+guide researchers from the basics of using SMU's supercomputing resources to
+advanced parallelization and application specific usage. The topics will cover
+information useful for researchers to quickly begin to use the new compute
+capabilities provided with the cluster. New users are encouraged to take
+advantage of the introductory "Introduction to ManeFrame II (M2)" workshop that
+will be given once monthly during the semester. Users are encourged to stop by
+to discuss M2 usage and application issues during the open help sessions.
+
+Workshops will be given weekly on Wednesday's in Fondren Library East Room 110
+from 12:00 to 2:00 PM. Register `here
+<https://smu.az1.qualtrics.com/jfe/form/SV_6fm6rdPms69kvgV>`_!
+
+.. rst-class:: table
+
+=========== ========================================================
+Date        Workshop
+=========== ========================================================
+January 23  ManeFrame II (M2) Introduction
+January 30  Open Help Session
+February 6  ManeFrame II (M2) Introduction
+February 13 Using Version Control
+February 20 Using Spack for Development
+February 27 Open Help Session
+March 6     ManeFrame II (M2) Introduction
+March 13    Spring Break
+March 20    Using Accelerated Libraries
+March 27    Open Help Session
+April 3     ManeFrame II (M2) Introduction
+April 10    Improving Vectorization
+April 17    Using MPI + OpenMP/OpenACC
+April 24    Open Help Session
+May 1       ManeFrame II (M2) Introduction
+=========== ========================================================
+
+

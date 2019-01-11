@@ -10,9 +10,8 @@ advantage of the introductory "Introduction to ManeFrame II (M2)" workshop that
 will be given once monthly during the semester. Users are encourged to stop by
 to discuss M2 usage and application issues during the open help sessions.
 
-Workshops will be given weekly on Wednesday's in Fondren Library East Room 110
-from 12:00 to 2:00 PM. Register `here
-<https://smu.az1.qualtrics.com/jfe/form/SV_eVvCiD9cDQyyxIV>`_!
+Workshops were given weekly on Wednesday's in Fondren Library East Room 110
+from 12:00 to 2:00 PM.
 
 .. rst-class:: table
 

@@ -28,7 +28,6 @@ February 27 Open Help Session
 March 6     ManeFrame II (M2) Introduction
 March 13    Spring Break
 March 20    Using Accelerated Libraries
-March 27    Open Help Session
 April 3     ManeFrame II (M2) Introduction
 April 10    Improving Vectorization
 April 17    Using MPI + OpenMP/OpenACC

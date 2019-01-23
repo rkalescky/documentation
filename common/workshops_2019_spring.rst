@@ -12,14 +12,14 @@ to discuss M2 usage and application issues during the open help sessions.
 
 Workshops will be given weekly on Wednesday's in Fondren Library East Room 110
 from 12:00 to 2:00 PM. Register `here
-<https://smu.az1.qualtrics.com/jfe/form/SV_6fm6rdPms69kvgV>`_!
+<https://smu.az1.qualtrics.com/jfe/form/SV_6fm6rdPms69kvgV>`__!
 
 .. rst-class:: table
 
-=========== ========================================================
+=========== ===========================================================================================
 Date        Workshop
-=========== ========================================================
-January 23  ManeFrame II (M2) Introduction
+=========== ===========================================================================================
+January 23  `ManeFrame II (M2) Introduction <https://smu.box.com/s/hjokgla64wpbk3swrp73xpkyzeybf373>`__
 January 30  Open Help Session
 February 6  ManeFrame II (M2) Introduction
 February 13 Using Version Control
@@ -33,6 +33,5 @@ April 10    Improving Vectorization
 April 17    Using MPI + OpenMP/OpenACC
 April 24    Open Help Session
 May 1       ManeFrame II (M2) Introduction
-=========== ========================================================
-
+=========== ===========================================================================================
 

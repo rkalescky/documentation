@@ -25,34 +25,18 @@ when we built the ``units`` program in the previous tutorial, the
 Retrieve the set of files for this tutorial either through clicking here
 or by copying the relevant files at the command line:
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     $ cp -R /hpc/examples/workshops/hpc/makefile_tutorial .
-
-.. raw:: html
-
-   </div>
 
 You should now see a new subdirectory entitled ``makefile_tutorial`` in
 your current directory. This is where we will work for the rest of this
 section. Inside this directory you will see a number of files:
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     driver.cpp      vector_difference.cpp    vector_sum.cpp
     one_norm.cpp    vector_product.cpp
-
-.. raw:: html
-
-   </div>
 
 Here, the main program is held in the file ``driver.cpp``, and
 supporting subroutines are held in the remaining files. To compile these
@@ -61,17 +45,9 @@ on ManeFrame, it takes a number of steps.
 Let's first compile and assemble the auxiliary subroutine
 ``one_norm.cpp``:
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     $ g++ -c one_norm.cpp
-
-.. raw:: html
-
-   </div>
 
 This calls the GNU C++ compiler, ``g++``, to create an object file,
 named ``one_norm.o``, that contains compiler-generated CPU instructions
@@ -89,18 +65,10 @@ these files together. We may call ``g++`` one more time to do this
 object files as arguments so that ``g++`` knows which files to link
 together:
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     $ g++ driver.o one_norm.o vector_difference.o vector_product.o \
       vector_sum.o -lm
-
-.. raw:: html
-
-   </div>
 
 This creates an executable file named ``a.out``, which is the default
 (entirely non-descriptive) name given by most compilers to the resulting
@@ -112,18 +80,10 @@ use the absolute value function, ``fabs()``, that is called inside the
 You can instead give your executable a more descriptive name with the
 ``-o`` option:
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     $ g++ driver.o one_norm.o vector_difference.o vector_product.o \
       vector_sum.o -lm -o driver.exe 
-
-.. raw:: html
-
-   </div>
 
 This will create the same executable, but with the more descriptive name
 ``driver.exe``.
@@ -146,20 +106,12 @@ A few rules about ``Makefiles``:
 -  Blank lines are ignored.
 -  You specify a *target* for ``make`` to build using the syntax,
 
-   .. raw:: html
-
-      <div class="sourceCode">
-
    .. code:: makefile
 
        target : dependencies
              build command 1
              build command 2
              build command 3
-
-   .. raw:: html
-
-      </div>
 
    where each of the lines following the ``target :`` line must begin
    with a ``[Tab]`` character. Each of these lines are executed when
@@ -174,10 +126,6 @@ As an example, examine the Makefile from the previous tutorial. Here,
 all of the lines are either blank or are comment lines except for the
 four sets:
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: makefile
 
     hello_cpp.exe : hello.cpp
@@ -191,10 +139,6 @@ four sets:
 
     hello_f77.exe : hello.f
             gfortran hello.f -o hello_f77.exe
-
-.. raw:: html
-
-   </div>
 
 Here, we have four build targets, ``hello_cpp.exe``, ``hello_c.exe``,
 ``hello_f90.exe`` and ``hello_f77.exe`` (it is traditional to give the
@@ -211,10 +155,6 @@ example, ``make`` will build ``hello_cpp.exe`` by issuing the command
 and linking all in one step (since there is only one source code file).
 
 Alternatively, this Makefile could have been written:
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: makefile
 
@@ -234,15 +174,7 @@ Alternatively, this Makefile could have been written:
             gfortran -c hello.f
             gfortran hello.o -o hello_f77.exe
 
-.. raw:: html
-
-   </div>
-
 or even as
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: makefile
 
@@ -257,10 +189,6 @@ or even as
 
     hello_f77.exe : 
             gfortran hello.f -o hello_f77.exe
-
-.. raw:: html
-
-   </div>
 
 (which ignores the dependency on the source code files ``hello.cpp``,
 ``hello.c``, ``hello.f90`` and ``hello.f``, respectively).
@@ -277,17 +205,9 @@ possible, which is where Makefile variables come into the picture. We
 can define our own variable in a ``Makefile`` by placing the variable to
 the left of an equal sign, with the value to the right (as with Bash):
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: makefile
 
     VAR = value
-
-.. raw:: html
-
-   </div>
 
 The main difference with Bash comes in how we use these variables.
 Again, it requires a ``$``, but we also need to use parentheses or
@@ -302,10 +222,6 @@ variables within ``Makefile`` commands that can be quite handy:
 
 With these, we can streamline our previous ``Makefile`` example
 considerably:
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: makefile
 
@@ -325,10 +241,6 @@ considerably:
     hello_f77.exe : hello.f
             $(FC) $^ -o $@
 
-.. raw:: html
-
-   </div>
-
 Advanced Usage
 ~~~~~~~~~~~~~~
 
@@ -344,10 +256,6 @@ functions, just the one that you changed. By setting up your
 Makefile knows how to build each ``.o`` file so that it depends on the
 respective ``.c`` file, recompilation of your project can be very
 efficient. For example,
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: makefile
 
@@ -371,19 +279,11 @@ efficient. For example,
     func4.o : func4.c
             $(CC) -c $^ -o $@
 
-.. raw:: html
-
-   </div>
-
 However, if this actually depends on a *large number* of input
 functions, the Makefile can become very long if you have to specify the
 recipe for compiling each ``.c`` file into a ``.o`` file. To this end,
 we can supply an *explicit rule* for how to perform this conversion,
 e.g.
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: makefile
 
@@ -397,10 +297,6 @@ e.g.
 
     %.o : %.c 
             $(CC) -c $^ -o $@
-
-.. raw:: html
-
-   </div>
 
 Here, the last block specifies the rule for how to convert *any* ``.c``
 file into a ``.o`` file. Similarly, we have defined the ``OBJS``
@@ -418,10 +314,6 @@ change even a single line in this header file, we'll need to recompile
 all of our ``.c`` files, so we need to add ``head.h`` as a dependency
 for processing our ``.c`` files into ``.o`` files:
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: makefile
 
     CC=gcc
@@ -435,40 +327,20 @@ for processing our ``.c`` files into ``.o`` files:
     %.o : %.c head.h
             $(CC) -c $< -o $@
 
-.. raw:: html
-
-   </div>
-
 Note that to the right of the colon in our explicit rule we have now
 listed the header file, ``head.h``. Also notice that within the explicit
 rule, we now use the ``$<`` instead of the ``$^``, this is because we
 want the compilation line to be, e.g.
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     gcc -c func3.c -o func3.o
 
-.. raw:: html
-
-   </div>
-
 and **not**
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: bash
 
     gcc -c func3.c head.h -o func3.o
-
-.. raw:: html
-
-   </div>
 
 so we only wanted to automatically list the *first* dependency from the
 list, and not *all* dependencies.
@@ -482,17 +354,9 @@ workshop tutorial, out of the files ``driver.cpp``, ``one_norm.cpp``,
 ``vector_sum.cpp``. This should encode all of the commands that we
 earlier needed to do by hand. Start out with the command
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     $ gedit Makefile &
-
-.. raw:: html
-
-   </div>
 
 to have ``gedit`` create the file ``Makefile`` in the background, so
 that while you edit the ``Makefile`` you can still use the terminal
@@ -512,18 +376,10 @@ files created during compilation of the executable, typically entitled
 command ``make clean`` if we add the following lines to the
 ``Makefile``, after your commands to create ``driver.exe``:
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: makefile
 
     clean :
           rm -f *.o
-
-.. raw:: html
-
-   </div>
 
 Now type ``make clean`` in the terminal -- all of the temporary build
 files have been removed.

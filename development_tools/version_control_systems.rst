@@ -389,24 +389,12 @@ directory. Here, we'll use one that I've set up for this class on the
 public web server `bitbucket.org <http://bitbucket.org>`__. In
 Mercurial, the initial download of the code uses the ``clone`` command:
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     $ hg clone https://drreynolds@bitbucket.org/drreynolds/smuhpc-workshop-example
 
-.. raw:: html
-
-   </div>
-
 When the command completes, you should have a new directory named
 ``smuhpc-workshop-example``. Enter that directory,
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: bash
 
@@ -415,10 +403,6 @@ When the command completes, you should have a new directory named
     driver.cpp     vector_difference.cpp   vector_sum.cpp
     one_norm.cpp   vector_product.cpp 
 
-.. raw:: html
-
-   </div>
-
 You should notice the files we used earlier in this tutorial. Since
 Mercurial is a *distributed* version control system, this directory is
 now a new repository of your own.
@@ -426,65 +410,33 @@ now a new repository of your own.
 In this directory, add a new file of the form *lastname.txt* containing
 your first name, e.g.
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     $ echo "Rob" > Kalescky.txt
 
-.. raw:: html
-
-   </div>
-
 To see which files have changed in comparison with the last saved state
 of the repository, you can use the ``status`` command:
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: bash
 
     $ hg status
     ? Kalescky.txt
 
-.. raw:: html
-
-   </div>
-
 The "?" indicates that there is a new file in the directory that the
 repository does not yet know about. We can add these files to the
 repository with the ``add`` command:
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: bash
 
     $ hg add Kalescky.txt
 
-.. raw:: html
-
-   </div>
-
 Re-running ``status``, we see that the repository now knows about the
 file:
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: bash
 
     $ hg status
     A Kalescky.txt
-
-.. raw:: html
-
-   </div>
 
 where, the "A" denotes that the file has been added to the repository.
 Other keys include:
@@ -496,10 +448,6 @@ Other keys include:
 If you want to see the specific changes that have been made to all of
 the Mercurial-tracked files, you can use the ``diff`` command:
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     $ hg diff
@@ -509,10 +457,6 @@ the Mercurial-tracked files, you can use the ``diff`` command:
     @@ -0,0 +1,1 @@
     +Daniel
 
-.. raw:: html
-
-   </div>
-
 where we see that there is a new line "Rob" (denoted by the ``+``) that
 has been added.
 
@@ -521,32 +465,16 @@ To do so, we must supply both a log message using the ``-m`` flag, and
 our name (in order to give credit and/or lay blame) with the ``-u``
 flag. For example, my commit message could be something like this:
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     $ hg commit -u rkalescky -m "added a file with my name" Kalescky.txt
 
-.. raw:: html
-
-   </div>
-
 Once this command has completed, we see that the local directory is
 current with our local repository:
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: bash
 
     $ hg status
-
-.. raw:: html
-
-   </div>
 
 (note that nothing is listed).
 
@@ -567,79 +495,39 @@ code, you should always retrieve any changes that your collaborators
 have made to the repository by using a "pull" and an "update" (and
 possibly a "merge" if necessary). To retrieve these changes:
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     $ hg pull
     $ hg update
 
-.. raw:: html
-
-   </div>
-
 If the ``update`` command returns successfully, then you can push your
 changes back to my example repository with the command
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: bash
 
     $ hg push
-
-.. raw:: html
-
-   </div>
 
 However, if the ``update`` command complained about changes needing to
 be merged (meaning that someone else checked things in, so your changes
 need to be merged with his/hers), then you can ``merge`` via
 
-.. raw:: html
-
-   <div class="sourceCode">
-
 .. code:: bash
 
     $ hg merge
 
-.. raw:: html
-
-   </div>
-
 Assuming that your modifications do not collide with anyone else's, this
 should be successful, in which case you need to check in the merge
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: bash
 
     $ hg commit -u rkalescky -m "merged to tip"
 
-.. raw:: html
-
-   </div>
-
 Once you're certain that you have finished retrieving and merging all
 changes from the shared repository, you ``push`` via
-
-.. raw:: html
-
-   <div class="sourceCode">
 
 .. code:: bash
 
     $ hg push
-
-.. raw:: html
-
-   </div>
 
 Typically this process is not difficult, since you will usually be
 editing different files than your collaborators.

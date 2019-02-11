@@ -322,9 +322,9 @@ projects free of charge, including:
 Git resources:
 
 -  `Main Git site <http://git-scm.com/>`__
--  `https://guides.github.com/introduction/git-handbook/`__
--  `https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud`__
--  `https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet`__
+-  `Github Git Handbook <https://guides.github.com/introduction/git-handbook/>`__
+-  `Bitbucket Git Tutorial <https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud>`__
+-  `Bitbucket Git Cheatsheet <https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet>`__
 
 Mercurial
 ~~~~~~~~~

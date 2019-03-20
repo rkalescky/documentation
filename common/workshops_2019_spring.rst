@@ -25,9 +25,9 @@ February 6  `ManeFrame II (M2) Introduction <https://smu.box.com/s/hjokgla64wpbk
 February 13 `Using Version Control <http://faculty.smu.edu/csc/documentation/development_tools/version_control_systems.html>`__
 February 20 `Using Spack for Development <https://spack.readthedocs.io/en/latest/tutorial.html>`__
 February 27 Open Help Session
-March 6     ManeFrame II (M2) Introduction
+March 6     `ManeFrame II (M2) Introduction <https://smu.box.com/s/hjokgla64wpbk3swrp73xpkyzeybf373>`__
 March 13    Spring Break
-March 20    Using Accelerated Libraries
+March 20    `Using Accelerated Libraries <https://smu.box.com/s/41e6b7we70k2gjugkq7b2767spqbjt31>`__
 April 3     ManeFrame II (M2) Introduction
 April 10    Improving Vectorization
 April 17    Using MPI + OpenMP/OpenACC
@@ -35,6 +35,3 @@ April 24    Open Help Session
 May 1       ManeFrame II (M2) Introduction
 =========== ===================================================================================================================
 
-.. _ManeFrame II (M2) Introduction: https://smu.box.com/s/hjokgla64wpbk3swrp73xpkyzeybf373
-.. _Using Version Control: 
-.. _Using Spack for Development: 

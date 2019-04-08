@@ -16,7 +16,7 @@ Getting Started
 
 In this tutorial, we will use examples in either C, C++ or Fortran90.
 Choose your preferred language of the three by copying the relevant
-files on ManeFrame II with:
+files on ManeFrame II (M2) with:
 
 .. code:: bash
 
@@ -39,14 +39,14 @@ the compilation commands in the ``Makefile`` for the target
 
 Run the new executable. It should die with an error message about a
 segmentation violation (segmentation fault) or bus error, depending on
-the compiler/OS, e.g.
+the compiler/OS, e.g.,
 
 .. code:: bash
 
     $ ./driver2.exe
     Segmentation fault
 
-There are many ways to track down this kind of error (e.g. adding print
+There are many ways to track down this kind of error (e.g., adding print
 statements everywhere, staring intently hoping for an epiphany, randomly
 changing things to see what happens). In this tutorial we will use the
 most efficient debugging approach, that of using a tool to track down
@@ -103,7 +103,7 @@ F90 users:
 A word of warning, the location of the segmentation fault or bus error
 is not always where the problem is located. Segmentation faults
 generally occur due to an attempt within the program to read to or write
-from an illegal memory location, i.e. a memory location that is not a
+from an illegal memory location, i.e., a memory location that is not a
 part of a currently-available variable. Examples of bugs that can cause
 a seg-fault are iterating outside of the bounds of an array, or a
 mismatch between the arguments that a program uses to call a function
@@ -146,14 +146,14 @@ Advanced Debuggers
 
 There are many freely-available Linux debugging utilities in addition to
 `gdb <https://www.gnu.org/software/gdb/>`__. Most of these are graphical
-(i.e. point-and-click), and in fact use ``gdb`` under the hood. Some of
+(i.e., point-and-click), and in fact use ``gdb`` under the hood. Some of
 the more popular of these debuggers include:
 `ddd <https://www.gnu.org/software/ddd/>`__,
 `nemiver <http://projects.gnome.org/nemiver/>`__,
 `eclipse <http://www.eclipse.org/eclipse/debug/>`__,
-`zerobugs <https://zerobugs.codeplex.com/>`__,
+`zerobugs <https://zerobugs.codeplex.com/>`__, and
 `edb <http://www.woodmann.com/collaborative/tools/index.php/EDB_Linux_Debugger>`__.
-However, of this set the ManeFrame cluster currently only has ``gdb``
+However, of this set the M2 cluster currently only has ``gdb``
 installed (ask your system administrators for others you want/need).
 
 Additionally, there are some highly advanced non-free Linux debugging
@@ -163,7 +163,7 @@ utilities available (all typically graphical), including
 `idb <http://software.intel.com/en-us/articles/idb-linux>`__ (only works
 with the Intel compilers), and PGI's
 `pgdbg <http://www.pgroup.com/products/pgdbg.htm>`__ (graphical) and
-pgdebug (text version). Of these, the ManeFrame cluster has both
+pgdebug (text version). Of these, the M2 cluster has both
 ``pgdbg`` and ``pgdebug``.
 
 The usage of most of the above debuggers is similar to ``gdb``, except
@@ -341,7 +341,7 @@ Optimizing Code
 ~~~~~~~~~~~~~~~
 
 Save a copy of the source code file you plan to modify using the ``cp``
-command, e.g.
+command, e.g.,
 
 .. code:: bash
 
@@ -359,7 +359,7 @@ Determine what, if anything, can be optimized in this routine. The topic
 of code optimization is bigger than we can cover in a single workshop
 tutorial, but here are some standard techniques.
 
-Code optimization techniques
+**Code Optimization Techniques**
 
 1. Is there a simpler way that the arithmetic could be accomplished?
    Sometimes the most natural way of writing down a problem does not
@@ -481,7 +481,7 @@ optimization level):
 
 1. Replace the current flag ``-O0`` in your ``Makefile`` with the flag
    ``-O2``.
-2. Copy the original file back, e.g.
+2. Copy the original file back, e.g.,
 
    .. code:: bash
 

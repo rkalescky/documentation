@@ -5,7 +5,7 @@
 Running MATLAB on ManeFrame II
 ==============================
 
-Types of Nodes On Which MATLAB Is to Run
+Types of Nodes on Which MATLAB is to Run
 ----------------------------------------
 
 First, you must identify the type of compute resource needed to run your
@@ -21,10 +21,10 @@ following examples.
 Running MATLAB Interactively with the Graphical User Interface
 --------------------------------------------------------------
 
-The MATLAB graphical user interface can be run directly off of ManeFrame II
+The MATLAB graphical user interface can be run directly off of ManeFrame II (M2)
 compute nodes using X11 forwarding.
 
-Running MATLAB Graphical User Interface Via X11 Forwarding
+Running MATLAB Graphical User Interface via X11 Forwarding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Running the MATLAB graphical user interface via X11 requires SSH with X11
@@ -32,7 +32,7 @@ forwarding and SFTP access.
 
 1. Log into the cluster using SSH with X11 forwarding enabled and run
    the following commands at the command prompt.
-2. ``module load matlab`` to enable access to MATLAB
+2. ``module load matlab`` to enable access to MATLAB.
 3. ``srun -p <partition and options> --x11=first --pty matlab`` where
    ``<partition and options>`` is the partition and associated Slurm
    flags for each partition outlined above.
@@ -47,12 +47,12 @@ forwarding and SFTP access.
 Running MATLAB Graphical User Interface Locally and Issuing Computations to ManeFrame II
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-ManeFrame II (M2) has `MATLAB Distributed Computing Server (DCS) <https://www.mathworks.com/products/distriben.html>`__ installed with enables MATLAB users to issue commands from their local MATLAB installation and have those commands run on M2. However, to be able to do this several criteria first need to be met.
+ManeFrame II (M2) has `MATLAB Distributed Computing Server (DCS) <https://www.mathworks.com/products/distriben.html>`__ installed which enables MATLAB users to issue commands from their local MATLAB installation and have those commands run on M2. However, to be able to do this several criteria first need to be met.
 
-#. The local (your machine) MATLAB installation needs to be MATLAB R2017a
-#. SSH key based authentication to M2 must be setup
-#. The MATLAB DCS integration scripts need to be locally installed
-#. Configuring jobs and computations
+#. The local (your machine) MATLAB installation needs to be MATLAB R2017a.
+#. SSH key based authentication to M2 must be set up.
+#. The MATLAB DCS integration scripts need to be locally installed.
+#. Configuring jobs and computations.
 
 These are discussed each in turn in the following sections.
 
@@ -81,8 +81,7 @@ Configuring Jobs and Computation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Prior to submitting the job, we can specify various parameters to pass
-to our jobs, such as queue, username, e-mail, etc. Note that any parameters specified using the below workflow will be
-persistent between MATLAB sessions.
+to our jobs, such as queue, username, e-mail, etc. Note that any parameters specified using the below workflow will be persistent between MATLAB sessions.
 
 .. code:: matlab
 
@@ -118,7 +117,7 @@ To clear a value, assign the property an empty value (‘’, [], or false).
    % To clear a configuration that takes a string as input
    c.AdditionalProperties.EmailAddress = ‘ ’
 
-**Serial Jobs**
+**SERIAL JOBS**
 
 Use the batch command to submit asynchronous jobs to the cluster. The
 batch command will return a job object which is used to access the
@@ -295,7 +294,7 @@ these resources:
 * `Parallel Computing
   Documentation <http://www.mathworks.com/help/distcomp/index.html>`__
 * `Parallel Computing
-  Overview <http://www.mathworks.com/products/parallel-computing/index.htmlhttp:/www.mathworks.com/products/parallel-computing/index.html>`__
+  Overview <http://www.mathworks.com/products/parallel-computing/index.html>`__
 * `Parallel Computing
   Tutorials <http://www.mathworks.com/products/parallel-computing/tutorials.html>`__
 * `Parallel Computing
@@ -312,8 +311,7 @@ calculation, the number of calculations to be submitted, and user
 preference. The types of compute resources outlined above. Here, each
 partition delineates a specific type of compute resource and the
 expected duration of the calculation. Each of the following methods
-require SSH access. Examples can be found at ``/hpc/examples/matlab`` on
-ManeFrame II.
+require SSH access. Examples can be found at ``/hpc/examples/matlab`` on M2.
 
 Submitting a MATLAB Job to a Queue Using Wrap
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -323,14 +321,14 @@ using sbatch's wrapping function.
 
 1. Log into the cluster using SSH and run the following commands at the
    command prompt.
-2. ``module load matlab`` to enable access to MATLAB
-3. ``cd`` to directory with MATLAB script
+2. ``module load matlab`` to enable access to MATLAB.
+3. ``cd`` to the directory with MATLAB script.
 4. ``sbatch -p <partition and options> --wrap "matlab <matlab script file name>"``
    where ``<partition and options>`` is the partition and associated
    Slurm flags for each partition outlined in the table above. and
    ``<matlab script file name>`` is the MATLAB script to be run.
 5. ``squeue -u $USER`` to verify that the job has been submitted to the
-   queue
+   queue.
 
 **Example:**
 
@@ -339,8 +337,8 @@ using sbatch's wrapping function.
        module load matlab
        sbatch -p standard-mem-s --exclusive --mem=250G --wrap "matlab example.do"
 
-Submitting a MATLAB Job to a Queue Using a Submit Script
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Submitting a MATLAB Job to a Queue Using an sbatch Script
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A MATLAB script can be executed non-interactively in batch mode by creating
 an sbatch script. The sbatch script gives the Slurm resource scheduler
@@ -350,11 +348,11 @@ Slurm.
 
 1. Log into the cluster using SSH and run the following commands at the
    command prompt.
-2. ``cd`` to directory with MATLAB script
+2. ``cd`` to the directory with MATLAB script.
 3. ``cp /hpc/examples/matlab/matlab_example_htc.sbatch <descriptive file name>``
    where ``<descriptive file name>`` is meaningful for the calculation
    being done. It is suggested to not use spaces in the file name and
-   that it end with .sbatch for clarity.
+   that it end with *.sbatch* for clarity.
 4. Edit the sbatch file using using preferred text editor. Change the
    partition and flags and MATLAB script file name as required for your
    specific calculation.
@@ -367,22 +365,22 @@ Slurm.
 6. ``squeue -u $USER`` to verify that the job has been submitted to the
    queue.
 
-Submitting Multiple MATLAB Jobs to a Queue Using a Single Submit Script
+Submitting Multiple MATLAB Jobs to a Queue Using a Single sbatch Script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Multiple MATLAB scripts can be executed non-interactively in batch mode by
-creating an single sbatch script. The sbatch script gives the Slurm
+creating a single sbatch script. The sbatch script gives the Slurm
 resource scheduler information about what compute resources your
 calculations requires to run and also how to run the MATLAB script for each
 job when the job is executed by Slurm.
 
 1. Log into the cluster using SSH and run the following commands at the
    command prompt.
-2. ``cd`` to the directory with the MATLAB script or scripts
+2. ``cd`` to the directory with the MATLAB script or scripts.
 3. ``cp /hpc/examples/matlab/matlab_array_example.sbatch <descriptive file name>``
    where ``<descriptive file name>`` is meaningful for the calculations
    being done. It is suggested to not use spaces in the file name and
-   that it end with .sbatch for clarity. Additionally, to run this specific
+   that it end with *.sbatch* for clarity. Additionally, to run this specific
    example you will also need additional files that can be copied with the
    command ``cp /hpc/examples/matlab/{array_example_1.do,array_example_2.do,example.dta} .``.
 4. Edit the sbatch file using using preferred text editor. Change the
@@ -393,7 +391,6 @@ job when the job is executed by Slurm.
    :language: bash
 
 5. ``sbatch <descriptive file name>`` where ``<descriptive file name>``
-   is the Sbatch script name chosen previously.
+   is the sbatch script name chosen previously.
 6. ``squeue -u $USER`` to verify that the job has been submitted to the
    queue.
-

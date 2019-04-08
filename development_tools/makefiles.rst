@@ -197,7 +197,7 @@ Makefile Variables
 ~~~~~~~~~~~~~~~~~~
 
 As you likely noticed, many of the above commands seemed very repetitive
-(e.g. continually calling ``gfortran``, or repeating the dependencies
+(e.g., continually calling ``gfortran``, or repeating the dependencies
 and target name in the compile line).
 
 As with anything in Linux, we'd prefer to do things as easily as
@@ -245,7 +245,7 @@ Advanced Usage
 ~~~~~~~~~~~~~~
 
 If we have one main routine in the file ``driver.c`` that uses functions
-residing in multiple input files, e.g. ``func1.c``, ``func2.c``,
+residing in multiple input files, e.g., ``func1.c``, ``func2.c``,
 ``func3.c`` and ``func4.c``, it is standard to compile each of the input
 functions into ``.o`` files separately, and then to link them together
 with the driver at the last stage. This can be very helpful when
@@ -283,7 +283,7 @@ However, if this actually depends on a *large number* of input
 functions, the Makefile can become very long if you have to specify the
 recipe for compiling each ``.c`` file into a ``.o`` file. To this end,
 we can supply an *explicit rule* for how to perform this conversion,
-e.g.
+e.g.,
 
 .. code:: makefile
 
@@ -330,7 +330,7 @@ for processing our ``.c`` files into ``.o`` files:
 Note that to the right of the colon in our explicit rule we have now
 listed the header file, ``head.h``. Also notice that within the explicit
 rule, we now use the ``$<`` instead of the ``$^``, this is because we
-want the compilation line to be, e.g.
+want the compilation line to be, e.g.,
 
 .. code:: bash
 
@@ -352,7 +352,7 @@ Create a ``Makefile`` to compile the executable ``driver.exe`` for this
 workshop tutorial, out of the files ``driver.cpp``, ``one_norm.cpp``,
 ``vector_difference.cpp``, ``vector_product.cpp`` and
 ``vector_sum.cpp``. This should encode all of the commands that we
-earlier needed to do by hand. Start out with the command
+earlier needed to do by hand. Start out with the command:
 
 .. code:: bash
 

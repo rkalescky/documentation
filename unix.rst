@@ -8,11 +8,11 @@ UNIX
 Introduction to UNIX
 ====================
 
-The internet is `full of useful Linux
+The internet is full of `useful UNIX/Linux
 tutorials <http://lmgtfy.com/?q=linux+tutorial>`__; this is just one
 more, but hopefully it will be brief yet thorough enough to learn the
-basics of using Linux insofar as will be needed for the remainder of
-this workshop. The contents of this tutorial are adapted from an `online
+basics of using UNIX/Linux insofar as will be needed for the remainder of
+this documentation. The contents of this tutorial are adapted from an `online
 UNIX tutorial <http://www.ee.surrey.ac.uk/Teaching/Unix/>`__ by `Michael
 Stonebank <https://www.linkedin.com/in/mstonebank>`__.
 
@@ -37,15 +37,15 @@ Types of UNIX
 ~~~~~~~~~~~~~
 
 There are many different versions of UNIX, although they share common
-similarities. The most popular varieties of UNIX are GNU/Linux and MacOS
-X. Within the "Linux" category there are a multitude of flavors: Debian
+similarities. The most popular varieties of UNIX are GNU/Linux and macOS.
+Within the "Linux" category, there are a multitude of flavors: Debian
 (Ubuntu, Mint, Crunchbang), RedHat (RHEL, Fedora, CentOS), SuSE, etc.
 
 The UNIX operating system
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The UNIX operating system is made up of three parts; the kernel, the
-shell and the programs.
+shell, and the programs.
 
 The kernel
 ^^^^^^^^^^
@@ -116,8 +116,8 @@ editors, running compilers etc.
 
 Examples of files:
 
--  a document (report, essay etc.)
--  the text of a program written in some high-level programming language
+-  a document (report, essay etc.);
+-  the text of a program written in some high-level programming language;
 -  instructions comprehensible directly to the machine and
    incomprehensible to a casual user, for example, a collection of
    binary digits (an executable or binary file);
@@ -137,6 +137,7 @@ as a slash ``/``)
    <div class="figure">
 
 |UNIX directory structure example|
+
 UNIX directory structure example
 
 .. raw:: html
@@ -185,6 +186,7 @@ The ``ls`` command lists the contents of your current working directory.
    <div class="figure">
 
 |Unix Terminal - running the ls command|
+
 Unix Terminal - running the ``ls`` command
 
 .. raw:: html
@@ -224,6 +226,7 @@ As you can see, ``ls -a`` lists files that are normally hidden.
    <div class="figure">
 
 |Unix Terminal - running the ls -a command|
+
 Unix Terminal - running the ``ls -a`` command
 
 .. raw:: html
@@ -467,6 +470,7 @@ sub-directory, which is in the top-level root directory called ``/``.
    <div class="figure">
 
 |UNIX directory structure example|
+
 UNIX directory structure example
 
 .. raw:: html
@@ -1719,6 +1723,7 @@ below.
    <div class="figure">
 
 |File and directory access rights|
+
 File and directory access rights
 
 .. raw:: html

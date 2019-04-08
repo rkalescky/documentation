@@ -5,11 +5,11 @@
 Running Python on ManeFrame II
 ==============================
 
-Types of Nodes On Which Python Is to Run
+Types of Nodes on Which Python is to Run
 ----------------------------------------
 
 First, you must identify the type of compute resource needed to run your
-calculation. In the following table the compute resources are delineated
+calculation. In the following table the compute resources on ManeFrame II (M2) are delineated
 by resource type and the expected duration of the job. The duration and
 memory allocations are hard limits. Jobs with calculations that exceed
 these limits will fail. Once an appropriate resource has been identified
@@ -22,7 +22,7 @@ Python Versions
 ---------------
 
 There are several Python versions installed on M2. By default, the CentOS
-system Python is available. Additional high-performance implementations of
+system Python is available. Additional high performance implementations of
 Python are available via ``module load python/2`` or ``module load python/3``
 for Python 2.7 and Python 3.6 respectively. These Anaconda-based
 implementations also support conda environments, which allow for specific
@@ -31,10 +31,10 @@ Python and package versions to be installed as needed.
 Running Python Interactively with Jupyter Notebooks
 ---------------------------------------------------
 
-Jupyter Notebooks can be run directly off of ManeFrame II compute nodes using
+Jupyter Notebooks can be run directly off of M2 compute nodes using
 X11 forwarding or via SSH port forwarding.
 
-Running Jupyter Notebooks Via SSH Port Forwarding
+Running Jupyter Notebooks via SSH Port Forwarding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Log into the cluster.
@@ -46,7 +46,7 @@ Running Jupyter Notebooks Via SSH Port Forwarding
 7. Once the job has run for about two minutes, look into the job's output file, which should be named ``jupyter_<slurm_job_id_number>.out`` using more, e.g. ``cat jupyter_2658923.out`` if the ``<slurm_job_id_number>`` is "2658923".
 8. Follow the directions given in the output file to access the Jupyter Notebook using your local web browser.
 
-Running Jupyter Notebooks Via X11 Forwarding
+Running Jupyter Notebooks via X11 Forwarding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Running Jupyter Notebooks via X11 requires SSH with X11 forwarding and SFTP
@@ -75,8 +75,7 @@ calculation, the number of calculations to be submitted, and user
 preference. The types of compute resources outlined above. Here, each
 partition delineates a specific type of compute resource and the
 expected duration of the calculation. Each of the following methods
-require SSH access. Examples can be found at ``/hpc/examples/python`` and ``/hpc/examples/jupyter`` on
-ManeFrame II.
+require SSH access. Examples can be found at ``/hpc/examples/python`` and ``/hpc/examples/jupyter`` on M2.
 
 Submitting a Python Job to a Queue Using Wrap
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -87,7 +86,7 @@ using sbatch's wrapping function.
 1. Log into the cluster using SSH and run the following commands at the
    command prompt.
 2. ``module load python`` to enable access to Python.
-3. ``cd`` to directory with Python script.
+3. ``cd`` to the directory with Python script.
 4. ``sbatch -p <partition and options> --wrap "python <Python script file name>"``
    where ``<partition and options>`` is the partition and associated
    Slurm flags for each partition outlined in the table above. and
@@ -102,22 +101,22 @@ using sbatch's wrapping function.
        module load python
        sbatch -p standard-mem-s --exclusive --mem=250G --wrap "python example.py"
 
-Submitting a Python Job to a Queue Using a Submit Script
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Submitting a Python Job to a Queue Using an sbatch Script
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A Python script can be executed non-interactively in batch mode by creating
-an Sbatch script. The Sbatch script gives the Slurm resource scheduler
+an sbatch script. The sbatch script gives the Slurm resource scheduler
 information about what compute resources your calculation requires to
 run and also how to run the Python script when the job is executed by Slurm.
 
 1. Log into the cluster using SSH and run the following commands at the
    command prompt.
-2. ``cd`` to directory with Python script
+2. ``cd`` to the directory with the Python script.
 3. ``cp /hpc/examples/python/python_example.sbatch <descriptive file name>`` where
    ``<descriptive file name>`` is meaningful for the calculation being
    done. It is suggested to not use spaces in the file name and that it
-   end with .sbatch for clarity.
-4. Edit the Sbatch file using using preferred text editor. Change the
+   end with *.sbatch* for clarity.
+4. Edit the sbatch file using using preferred text editor. Change the
    partition and flags and Python script file name as required for your
    specific calculation.
 
@@ -136,25 +135,25 @@ run and also how to run the Python script when the job is executed by Slurm.
        python example.py                      # Edit Python script name as needed
 
 5. ``sbatch <descriptive file name>`` where ``<descriptive file name>``
-   is the Sbatch script name chosen previously.
+   is the sbatch script name chosen previously.
 6. ``squeue -u $USER`` to verify that the job has been submitted to the
    queue.
 
-Submitting Multiple Python Jobs to a Queue Using a Single Submit Script
+Submitting Multiple Python Jobs to a Queue Using a Single sbatch Script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Multiple Python scripts can be executed non-interactively in batch mode by
-creating an single Sbatch script. The Sbatch script gives the Slurm
+creating a single sbatch script. The sbatch script gives the Slurm
 resource scheduler information about what compute resources your
 calculations requires to run and also how to run the Python script for each
 job when the job is executed by Slurm.
 
 1. Log into the cluster using SSH and run the following commands at the
    command prompt.
-2. ``cd`` to the directory with the Python script or scripts
-3. ``cp -R /hpc/examples/python/python_array_example ~/``
-4. ``cd python_array_example``
-5. Edit the Sbatch file using using preferred text editor. Change the
+2. ``cd`` to the directory with the Python script or scripts.
+3. ``cp -R /hpc/examples/python/python_array_example ~/``.
+4. ``cd python_array_example``.
+5. Edit the sbatch file using using preferred text editor. Change the
    partition and flags, Python script file name, and number of jobs that will
    be executed as required for your specific calculation.
 
@@ -174,7 +173,6 @@ job when the job is executed by Slurm.
        python array_example_${SLURM_ARRAY_TASK_ID}.py
        # Edit Python script name as needed; ${SLURM_ARRAY_TASK_ID} is array index
 
-6. ``sbatch python_array.sbatch``
+6. ``sbatch python_array.sbatch``.
 7. ``squeue -u $USER`` to verify that the job has been submitted to the
    queue.
-

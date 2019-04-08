@@ -8,22 +8,18 @@ Accounts
 Request an Account
 ==================
 
-Faculty can request an account by sending an email to \ `SMU HPC
-Admins <mailto:help@smu.edu?subject=HPC%20Accounts>`__ with the
-following details. If you are a student or postdoc please ask your
-supervisor, sponsor, or adviser to send an email to \ `SMU HPC
-Admins <mailto:help@smu.edu?subject=HPC%20Account%20Request>`__ with the
-following details.
+SMU faculty/staff can request an account by sending an email (if you are a
+student or postdoc please ask your supervisor, sponsor, or adviser to send
+an email) to \ `SMU HPC Admins <mailto:help@smu.edu?subject=HPC%20Account%20Request>`__ with the following details.
 
 -  Full Name
 -  Department
--  A valid SMU email for SMU student/post-doc/faculty/staff.
+-  A valid SMU email for SMU faculty/staff/student/post-doc
 -  Duration for which the account should remain active
 
 If you are an external research collaborator please have your sponsor
 request a sponsored account at \ help@smu.edu. Once your account has
-been created please request HPC access at \ `SMU HPC
-Admins <mailto:help@smu.edu?subject=HPC%20Account%20Request>`__.
+been created please request HPC access at \ `SMU HPC Admins <mailto:help@smu.edu?subject=HPC%20Account%20Request>`__.
 
 Reset Account Password
 ======================
@@ -46,16 +42,14 @@ reason for the termination.
 Account and Account Password Sharing Policy
 ===========================================
 
-No two individuals should share the same ManeFrame account, nor should
-two individuals share the password of the same ManeFrame account. Each
-individual is entitled to have their own account hence please request
-one.
+No two individuals should share the same ManeFrame II account, nor should
+two individuals share the password of the same account. Each individual is
+entitled to have their own account hence please request one.
 
 .. raw:: html
 
    <div>
 
- 
 
 .. raw:: html
 

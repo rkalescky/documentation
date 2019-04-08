@@ -34,14 +34,15 @@ of the ordinary user. A number of utilities and tools have been
 developed for programmers and end-users to simplify these steps.
 
 A single session of a week-long workshop is an insufficient amount of
-time to teach any compiled programming language, so we'll primarily
+time to teach any compiled programming languages, so we'll primarily
 discuss how to use codes that you've written within a Linux environment,
 and provide some links on tutorial pages for two of most
-popular/advanced languages for modern high-performance computing (C++
-and Fortran90).
+popular/advanced languages (C++ and Fortran90) for modern high performance computing (HPC).
 
 Compiling Programs
 ------------------
+
+First copy the shared example code to your own directory:
 
 .. code:: bash
 
@@ -58,7 +59,7 @@ files:
     bash_example.sh  hello.cpp  hello.f90
 
 These implement the archetypal "Hello world" program in a variety of
-languages prevalent within high-performance computing:
+languages prevalent within HPC:
 
 -  ``hello.c`` -- written in the C programming language
 -  ``hello.cpp`` -- written in the C++ programming language
@@ -73,7 +74,7 @@ have no preference among these, open the C++ version:
     $ gedit hello.cpp &
 
 Depending on your language of choice, you should see something similar
-to the following
+to the following:
 
 .. code:: c
 
@@ -94,9 +95,8 @@ approach to programming, you're probably more used to seeing this within
 an *Integrated Desktop Environment* (IDE), where you enter your code and
 click icons that will handle compilation and execution of your program
 for you. While IDEs exist in the Linux world, they are rarely used in
-high-performance computing since the compilation approach on your laptop
-typically cannot create code that will execute on the worker nodes of a
-cluster.
+HPC since the compilation approach on your laptop typically cannot create
+code that will execute on the worker nodes of a cluster.
 
 So with *portability* in mind, let's investigate the (rather simple)
 world of command-line compilation in Linux.
@@ -111,9 +111,9 @@ every Linux system is installed with the GNU compiler collection,
 
 However, if you have a very old version of the GNU compiler suite,
 instead of ``gfortran`` you may have ``g77``, that only works with F77
-code (no F90 or newer).
+code (not F90 or newer).
 
-The GNU compiler suite is open-source (i.e. you can modify it if you
+The GNU compiler suite is open-source (i.e., you can modify it if you
 want), free, and is available for all major computer architectures (even
 Windows); however, it does not always produce the most efficient code.
 As a result, the `SMU Center for Scientific
@@ -125,7 +125,7 @@ Computation <http://www.smu.edu/Academics/CSC>`__ has purchased the
 -  ``pgfortran`` - the PGI Fortran compiler (handles F77/F90/F95/F2003)
 
 To compile an executable, we merely call the relevant compiler, followed
-by the files we wish to compile, e.g. for the C code we'd use
+by the files we wish to compile, e.g., for the C code we'd use
 
 .. code:: bash
 
@@ -142,7 +142,7 @@ is the standard output name for executables produced by compilers.
 However, since a computer where every program was named "a.out" would be
 unusable, it is typical to give your your program a somewhat more
 descriptive name. This is handled with the command line option ``-o``,
-e.g.
+e.g.,
 
 .. code:: bash
 
@@ -261,7 +261,7 @@ that converts between different units of measurements.
 Downloading Source Code
 '''''''''''''''''''''''
 
-First create a download directory
+First create a download directory:
 
 .. code:: bash
 
@@ -279,7 +279,7 @@ thought that ``wwwget`` was too long to use):
 Extracting the Source Code
 ''''''''''''''''''''''''''
 
-List the contents of your download directory
+List the contents of your download directory:
 
 .. code:: bash
 
@@ -290,13 +290,13 @@ several files and directories into one single ".tar" file. This is then
 compressed using the ``gzip`` command (to create a ".tar.gz" file).
 
 First unzip the file using the ``gunzip`` command. This will create a
-.tar file
+.tar file:
 
 .. code:: bash
 
     $ gunzip units-1.74.tar.gz
 
-Then extract the contents of the tar file.
+Then extract the contents of the tar file:
 
 .. code:: bash
 
@@ -319,7 +319,7 @@ files in a folder, then zip that new folder so that when unpacked, all
 contents are contained nicely in the sub-folder.
 
 Again, list the contents of the directory, then go to the ``units-1.74``
-sub-directory
+sub-directory:
 
 .. code:: bash
 
@@ -330,7 +330,7 @@ Configuring and Creating the Makefile
 '''''''''''''''''''''''''''''''''''''
 
 The first thing to do is carefully read the ``README`` and ``INSTALL``
-text files (use the ``less`` command). If the package author is doing
+text files (use the ``less`` command below). If the package author is doing
 her job correctly, this these files will contain important information
 on how to compile and run the software (if not, they may contain useless
 or outdated information). *This* package was put together by a
@@ -371,7 +371,7 @@ Building the Package
 ''''''''''''''''''''
 
 Now you can go ahead and build the package by running the ``make``
-command
+command:
 
 .. code:: bash
 
@@ -385,7 +385,7 @@ can check to see whether everything compiled successfully by typing
 
     $ make check
 
-If everything is okay, you can now install the package.
+If everything is okay, you can now install the package:
 
 .. code:: bash
 
@@ -406,29 +406,29 @@ Go back to the top of your home directory:
 You are now ready to run the software (assuming everything worked).
 Unlike most of the commands you have used so far, the new ``units``
 executable is not in your ``PATH``, so you cannot run it from your
-current directory:
+current directory like this (the following command will fail to run):
 
 .. code:: bash
 
     $ units
 
-Instead, you must executables that are not in your ``PATH`` by providing
+Instead, you must run executables that are not in your ``PATH`` by providing
 the pathname to the executable. One option for this is to provide the
-path name from your current location, e.g.
+path name from your current location, e.g.,
 
 .. code:: bash
 
     $ ./units-1.7.4/bin/units
 
 Alternately, you can navigate through the directory structure until you
-are in the same directory as the executable,
+are in the same directory as the executable:
 
 .. code:: bash
 
     $ cd ~/units-1.7.4
 
 If you list the contents of the units directory, you will see a number
-of subdirectories.
+of subdirectories:
 
 +-----------+----------------------------------+
 | Directory | Contents                         |
@@ -442,19 +442,19 @@ of subdirectories.
 | share     | Shared data files                |
 +-----------+----------------------------------+
 
-To run the program, change to the ``bin`` directory:
+To run the program, change into the ``bin`` directory:
 
 .. code:: bash
 
     $ cd bin
 
-and type:
+and type
 
 .. code:: bash
 
     $ ./units
 
-As an example, convert 6 feet to meters,
+As an example, convert 6 feet to meters:
 
 .. code:: bash
 
@@ -486,7 +486,7 @@ exit back to the command prompt.
 
 If for some reason you don't actually want such a critically important
 program installed in your home directory, you can delete it with the
-command
+command:
 
 .. code:: bash
 

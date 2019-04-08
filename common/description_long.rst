@@ -1,13 +1,13 @@
-SMU’s new high-performance compute cluster will dramatically increase
+SMU’s new high performance computing (HPC) cluster, ManeFrame II (M2), will dramatically increase
 the computational capacity and performance that SMU provides to its
-researchers. The new cluster features state of the art CPUs,
-accelerators, and networking technologies, significantly more memory per
+researchers. The new cluster features state-of-the-art CPUs,
+accelerators, and networking technologies, significantly high memory capacity per
 node, and advanced interactive GPU-accelerated remote desktop
 experiences. Also, the cluster is much more energy efficient making it
 more economical to run and more environmentally friendly!
 
 The new cluster will provide a similar interactive experience for
-researchers currently using ManeFrame. Similarities include the CentOS 7
+researchers currently/previously using ManeFrame I. Similarities include the CentOS 7
 operating system (replacing Scientific Linux 6; both are Red Hat
 Enterprise Linux derivatives), the SLURM resource scheduler, and the
 Lmod environment module system. Additionally, updated, but familiar,
@@ -17,27 +17,27 @@ as MATLAB, Python, and R will also be installed in addition to the
 domain specific software packages that SMU researchers depend on for
 their work.
 
-+-----------------------------+---------------------+-----------------------+
-|                             | ManeFrame I         | ManeFrame II          |
-+=============================+=====================+=======================+
-| Computational Ability       | 104 TFLOPS          | 630 TFLOPS            |
-+-----------------------------+---------------------+-----------------------+
-| Number of Nodes             | 1,104               | 306                   |
-+-----------------------------+---------------------+-----------------------+
-| Total CPU Cores             | 8,832               | 11,088                |
-+-----------------------------+---------------------+-----------------------+
-| Total Memory                | 29.2 TB (29,856 GB) | 116.5 TB (119,336 GB) |
-+-----------------------------+---------------------+-----------------------+
-| Total Accelerator Cores     | 0                   | 132,608               |
-+-----------------------------+---------------------+-----------------------+
-| Node Interconnect Bandwidth | 20 Gb/s             | 100 Gb/s              |
-+-----------------------------+---------------------+-----------------------+
-| Scratch Space.              | 1.4 PB (1,229 TB)   | 2.8 PB (2,867 TB)     |
-+-----------------------------+---------------------+-----------------------+
-| Archive Capabilities        | No                  | Yes                   |
-+-----------------------------+---------------------+-----------------------+
-| Operating System            | Scientific Linux 6  | CentOS 7              |
-+-----------------------------+---------------------+-----------------------+
++-----------------------------+-------------------------+-----------------------+
+|                             | ManeFrame I (*retired*) | ManeFrame II          |
++=============================+=========================+=======================+
+| Computational Ability       | 104 TFLOPS              | 630 TFLOPS            |
++-----------------------------+-------------------------+-----------------------+
+| Number of Nodes             | 1,104                   | 306                   |
++-----------------------------+-------------------------+-----------------------+
+| Total CPU Cores             | 8,832                   | 11,088                |
++-----------------------------+-------------------------+-----------------------+
+| Total Memory                | 29.2 TB (29,856 GB)     | 116.5 TB (119,336 GB) |
++-----------------------------+-------------------------+-----------------------+
+| Total Accelerator Cores     | 0                       | 132,608               |
++-----------------------------+-------------------------+-----------------------+
+| Node Interconnect Bandwidth | 20 Gb/s                 | 100 Gb/s              |
++-----------------------------+-------------------------+-----------------------+
+| Scratch Space               | 1.4 PB (1,229 TB)       | 2.8 PB (2,867 TB)     |
++-----------------------------+-------------------------+-----------------------+
+| Archive Capabilities        | No                      | Yes                   |
++-----------------------------+-------------------------+-----------------------+
+| Operating System            | Scientific Linux 6      | CentOS 7              |
++-----------------------------+-------------------------+-----------------------+
 
 .. _standard_nodes:
 
@@ -49,12 +49,12 @@ and 100 Gb/s networking. Specifically, these nodes contain dual Intel
 Xeon E5-2695v4 2.1 GHz 18-core “Broadwell” processors with 45 MB of
 cache each and 256 GB of DDR4-2400 memory. The “Broadwell”
 microarchitecture of these processors is four generations newer than the
-“Nehalem”-based Xeon processors in ManeFrame. This translates to more
+“Nehalem”-based Xeon processors in ManeFrame I. This translates to more
 efficient execution per processor cycle and significantly improved
 vectorization via the second-generation Advanced Vector Extensions
 (AVX2). In addition, there are 35 medium- and five high-memory compute
 nodes which have the same processors, but feature 768 GB and 1,536 GB
-(1.5 TB) of DDR4-2400 memory respectively and ManeFrame’s new four 768
+(1.5 TB) of DDR4-2400 memory respectively and ManeFrame I’s new four 768
 GB and six 1,536 GB (1.5 TB) nodes also will be added to the new
 cluster. The new and more efficient architecture, high core count, and
 high memory capacities of these nodes will provide significant
@@ -68,9 +68,9 @@ Accelerator Nodes with NVIDIA GPUs
 M2 contains 36 accelerator nodes with NVIDIA GPUs are configured with dual Intel
 Xeon E5-2695v4 2.1 GHz 18-core “Broadwell” processors, 256 GB of
 DDR4-2400 memory, and one NVIDIA P100 GPU accelerator. Each NVIDIA P100
-GPU has 3584 CUDA cores and 16 GB CoWoS HBM2 memory. The P100 GPU is the
+GPU has 3,584 CUDA cores and 16 GB CoWoS HBM2 memory. The P100 GPU is the
 based on the new Pascal architecture and an extremely high bandwidth
-(732 GB/s) stacked memory architecture. In addition, M2 has one... These GPU nodes, combined with an
+(732 GB/s) stacked memory architecture. In addition, M2 has one
 ever-broadening set of drop-in replacement libraries and ever easier to
 implement CUDA-based programming environments, make GPU-based
 acceleration significantly more approachable for many computationally
@@ -140,8 +140,8 @@ See :ref:`Programs and Policies <programs_and_policies>` for more information.
 
 .. _fp_hagstrom:
 
-Professor Thomas Hagstrom (Mathematics)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Professor Thomas Hagstrom (Mathematics)*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Professor Hagstrom has one node that is available as port of M2. This node has
 dual Intel Xeon E5-2680v3 2.50 GHz 12-core "Sandy Bridge" processors, 128 GB of
@@ -152,8 +152,8 @@ The queue for these nodes, ``fp-gpgpu-2``, is generally available to M2 users.
 
 .. _fp_minsker:
 
-Professor Barbara Minsker (Civil and Environmental Engineering)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Professor Barbara Minsker (Civil and Environmental Engineering)*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Professor Minsker has two nodes that are availabe as part of M2. These nodes
 each have dual Intel Xeon Gold 6148 2.40 GHz 20-core "Skylake" processors, 384

@@ -16,8 +16,8 @@ m2.smu.edu using your SMU credentials. 
 Linux
 -----
 
-Specific instructions will vary by Linux distribution, but generally the
-steps are as follows.
+Specific access instructions vary by different Linux distributions, but
+generally the steps are as follows.
 
 #. Open a terminal
 #. Type ``ssh -CX <your_username>@m2.smu.edu`` where ``<your_username>`` is your
@@ -69,26 +69,26 @@ Windows requires the one-time installation of an SSH client and X11.
 Once these two programs are installed, you can then log into ManeFrame
 II:
 
-#. Start the Xming program in Start Menu. The Xming program runs from
+#. Start the Xming program in the Start Menu. The Xming program runs from
    the System Tray.
-#. Start the Putty program in the Start Menu
+#. Start the Putty program in the Start Menu.
 #. In the Putty window:
 
-   #. In the “Category:” box:
+   #. In the “Category” box:
 
-      #. Scroll to the bottom and select “+” next to “SSH”
-      #. Select “X11”
+      #. Scroll to the bottom and select “+” next to “SSH”.
+      #. Select “X11”.
 
    #. In the “X11 forwarding” section, select “Enable X11 forwarding”.
-   #. In the “Category:” box, scroll to the top and select “Session”.
+   #. In the “Category” box, scroll to the top and select “Session”.
    #. In the “Host Name” field, type “m2.smu.edu”.
    #. In the “Saved Sessions” field, type “ManeFrame II (M2)”.
    #. Press “Save”.
    #. Press “Open”. Select “Yes” if you presented with a “Putty Security
       Alert” window.
    #. At the command prompt, type your username, which is the first part
-      of your SMU email address, followed by enter.
-   #. At the command prompt, type your SMU password followed by enter.
+      of your SMU email address, followed by *enter*.
+   #. At the command prompt, type your SMU password followed by *enter*.
 
 
 Setting Up Key-Based Authentication
@@ -102,9 +102,9 @@ Accessing Files via SFTP
 ManeFrame II has two separate file systems. The first, the "home" file
 system, contains user's home directories ("~/", "/users/$USER", "$HOME")
 and is what is seen when first logging into the system. The second, the
-"scratch" file system, is ManeFrame's high performance parallel file
+"scratch" file system, is ManeFrame II's high performance parallel file
 system ("/scratch/users/$USER" or "$SCRATCH"). The scratch file system
-is significantly larger and faster than the home file system and should
+is significantly larger and faster than the "home" file system and should
 be the file system used when running calculations. Files needed for
 running calculations or building software must be copied from your local
 computer to ManeFrame II. This is generally done using an SFTP client or

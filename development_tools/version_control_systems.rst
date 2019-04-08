@@ -28,8 +28,8 @@ It's why we use "Save As"; you want to save the new file without writing
 over the old one. It's a common problem, and solutions are usually like
 this:
 
--  Make a *single backup copy* (e.g. Document.old.txt).
--  If we're clever, we add a *version number* or *date*: e.g.
+-  Make a *single backup copy* (e.g., Document.old.txt).
+-  If we're clever, we add a *version number* or *date*: e.g.,
    Document_V1.txt, DocumentMarch2012.txt.
 -  We may even use a *shared folder* so other people can see and edit
    files without sending them by email. Hopefully they rename the file
@@ -157,10 +157,10 @@ A typical scenario goes like this:
 Standard VCS Programs
 ---------------------
 
-ManeFrame has a number of programs installed to enable version control
+ManeFrame II (M2) has a number of programs installed to enable version control
 over your codes. The most popular of these systems are listed below (in
 chronological order, from oldest to youngest) -- all of these are
-installed on ManeFrame and are in your ``$PATH`` by default.
+installed on M2 and are in your ``$PATH`` by default.
 
 CVS
 ~~~
@@ -408,7 +408,7 @@ Mercurial is a *distributed* version control system, this directory is
 now a new repository of your own.
 
 In this directory, add a new file of the form *lastname.txt* containing
-your first name, e.g.
+your first name, e.g.,
 
 .. code:: bash
 
@@ -554,7 +554,7 @@ projects:
 
    VCS systems store specific "versions" of each file, with checkins
    labeled using (hopefully descriptive) messages. Better yet, VCS
-   systems allow you to "tag" a specific state of the repository (e.g.
+   systems allow you to "tag" a specific state of the repository (e.g.,
    to mark it for release as version "2.0"). The repository may be
    "reverted" to its status at any tag or after any checkin with only
    one (or a few) simple commands.
@@ -595,10 +595,10 @@ However, a big problem with the above cloud-based approach is that the
 client software needs to be installed on all machines where you plan to
 access the in-cloud repository. While you can certainly install these
 programs on your own computers, in general *you cannot install them on
-shared clusters* (like ManeFrame). So if you do decide to use a
+shared clusters* (like M2). So if you do decide to use a
 customized cloud+VCS system, you'll still need to manually copy your
-codes to/from ManeFrame (or other shared clusters), and ensure that any
-updates to the repository and/or to files on ManeFrame are manually
+codes to/from M2 (or other shared clusters), and ensure that any
+updates to the repository and/or to files on M2 are manually
 merged back-and-forth.
 
 In my experience, it's much simpler (and just as free) to use a

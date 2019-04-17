@@ -30,7 +30,7 @@ March 13    Spring Break
 March 20    `Using Accelerated Libraries <https://smu.box.com/s/41e6b7we70k2gjugkq7b2767spqbjt31>`__
 April 3     `ManeFrame II (M2) Introduction <https://smu.box.com/s/hjokgla64wpbk3swrp73xpkyzeybf373>`__
 April 10    `Improving Vectorization <https://smu.box.com/s/95qo887mgnqmaafuuy7bsnyr9j95qb42>`__
-April 17    Using MPI + OpenMP/OpenACC
+April 17    `Using MPI + OpenMP/OpenACC <https://smu.box.com/s/1nwrrcpbd4yjer3erxi9x5mmvn5zy9p6>`__
 April 24    Open Help Session
 May 1       ManeFrame II (M2) Introduction
 =========== ===================================================================================================================

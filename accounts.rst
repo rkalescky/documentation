@@ -16,6 +16,7 @@ an email) to \ `SMU HPC Admins <mailto:help@smu.edu?subject=HPC%20Account%20Req
 -  Department
 -  A valid SMU email for SMU faculty/staff/student/post-doc
 -  Duration for which the account should remain active
+-  If the account is for a class, course number, name, and professor
 
 If you are an external research collaborator please have your sponsor
 request a sponsored account at \ help@smu.edu. Once your account has

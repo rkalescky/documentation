@@ -96,24 +96,29 @@
     
    });
 </script>
-<script type="text/javascript">
-   function SubmitSearch(sVal, site, e) {
-     var keynum;
-     keynum = 0;
+    <script type="text/javascript">
+        function SubmitSearch(sVal, site, e) {
+            sVal = sVal.replace(/\&/g, '%26');
+            sVal = sVal.replace(/</g, '&lt;');
+            var keynum;
+            keynum = 0;
 
-     if(window.event) { 
-       keynum = e.keyCode;
-     }
-     else if(e.which) { 
-       keynum = e.which;
-     }
-     if (keynum == 13) {
-       //alert('keynum= ' + keynum);
-       document.location.href='http://search.smuext.net/search?proximity=rank&suffixproc=min&client=SMU_default&proxystylesheet=SMU_default&site='+ site +'&output=xml_no_dtd&q=' + sVal;
-       return false;	
-     }
-   }
-</script>
+            if (window.event) {
+                keynum = e.keyCode;
+            } else if (e.which) {
+                keynum = e.which;
+            }
+            if (keynum === 13) {
+                document.location.href = 'https://www.smu.edu/search?proximity=rank&suffixproc=min&client=SMU_default&proxystylesheet=SMU_default&site=' + site + '&output=xml_no_dtd&q=' + sVal;
+                return false;
+            }
+        }
+
+        $('.input-group-append').on('click', function (event) {
+            var sVal = $('#q2').val();
+            document.location.href = 'https://www.smu.edu/search?proximity=rank&suffixproc=min&client=SMU_default&proxystylesheet=SMU_default&site=' + site + '&output=xml_no_dtd&q=' + sVal;
+        });
+    </script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 <body>

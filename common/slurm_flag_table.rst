@@ -16,6 +16,7 @@ development (1 :ref:`standard-mem <standard_nodes>`, 1 :ref:`MIC <knl_nodes>`, 1
 :ref:`high-mem-2 <standard_nodes>`                                                                         2 weeks  40      1538        ``-p high-mem-2 --mem=1500G``         
 :ref:`mic <knl_nodes>`                                                                                     1 week   64      384         ``-p mic --mem=374G``                 
 :ref:`gpgpu-1 <p100_nodes>`                                                                                1 week   36      256         ``-p gpgpu-1 --gres=gpu:1 --mem=250G``
+:ref:`v100x8 <p100_nodes>`                                                                                 1 week   4       90          ``-p v100x8 --gres=gpu:1 --mem=90G``
 :ref:`fp-gpgpu-2 <fp_hagstrom>`                                                                            various  24      128         ``-p fp-gpgpu-2 --gres=gpu:8 --mem=120G``
 :ref:`fp-gpgpu-3 <fp_minsker>`                                                                             various  40      384         ``-p fp-gpgpu-3 --gres=gpu:2 --mem=370G``
 ========================================================================================================== ======== ======= =========== ==================================================

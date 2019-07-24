@@ -17,27 +17,27 @@ as MATLAB, Python, and R will also be installed in addition to the
 domain specific software packages that SMU researchers depend on for
 their work.
 
-+-----------------------------+-------------------------+-----------------------+
-|                             | ManeFrame I (*retired*) | ManeFrame II          |
-+=============================+=========================+=======================+
-| Computational Ability       | 104 TFLOPS              | 630 TFLOPS            |
-+-----------------------------+-------------------------+-----------------------+
-| Number of Nodes             | 1,104                   | 306                   |
-+-----------------------------+-------------------------+-----------------------+
-| Total CPU Cores             | 8,832                   | 11,088                |
-+-----------------------------+-------------------------+-----------------------+
-| Total Memory                | 29.2 TB (29,856 GB)     | 116.5 TB (119,336 GB) |
-+-----------------------------+-------------------------+-----------------------+
-| Total Accelerator Cores     | 0                       | 132,608               |
-+-----------------------------+-------------------------+-----------------------+
-| Node Interconnect Bandwidth | 20 Gb/s                 | 100 Gb/s              |
-+-----------------------------+-------------------------+-----------------------+
-| Scratch Space               | 1.4 PB (1,229 TB)       | 2.8 PB (2,867 TB)     |
-+-----------------------------+-------------------------+-----------------------+
-| Archive Capabilities        | No                      | Yes                   |
-+-----------------------------+-------------------------+-----------------------+
-| Operating System            | Scientific Linux 6      | CentOS 7              |
-+-----------------------------+-------------------------+-----------------------+
++-----------------------------+-------------------------+-----------------------+---------------------+
+|                             | ManeFrame I (*retired*) | ManeFrame II (2017)   | ManeFrame II (2019) |
++=============================+=========================+=======================+=====================+
+| Computational Ability       | 104 TFLOPS              | 630 TFLOPS            | 870 TFLOPS          |
++-----------------------------+-------------------------+-----------------------+---------------------+
+| Number of Nodes             | 1,104                   | 349                   | 354                 |
++-----------------------------+-------------------------+-----------------------+---------------------+
+| Intel CPU Cores (AVX2)      | 8,832                   | 11,088                | 11,276              |
++-----------------------------+-------------------------+-----------------------+---------------------+
+| Total Accelerator Cores     | 0                       | 132,608               | 275,968             |
++-----------------------------+-------------------------+-----------------------+---------------------+
+| Total Memory                | 29.2 TB (29,856 GB)     | 116.5 TB (119,336 GB) | 120 TB (122,880 GB) |
++-----------------------------+-------------------------+-----------------------+---------------------+
+| Node Interconnect Bandwidth | 20 Gb/s                 | 100 Gb/s              | 100 Gb/s            |
++-----------------------------+-------------------------+-----------------------+---------------------+
+| Scratch Space               | 1.4 PB (1,229 TB)       | 1.4 PB (1,434 TB)     | 2.8 PB (2,867 TB)   |
++-----------------------------+-------------------------+-----------------------+---------------------+
+| Archive Capabilities        | No                      | Yes                   | Yes                 |
++-----------------------------+-------------------------+-----------------------+---------------------+
+| Operating System            | Scientific Linux 6      | CentOS 7              | CentOS 7            |
++-----------------------------+-------------------------+-----------------------+---------------------+
 
 .. _standard_nodes:
 
@@ -70,8 +70,10 @@ Xeon E5-2695v4 2.1 GHz 18-core “Broadwell” processors, 256 GB of
 DDR4-2400 memory, and one NVIDIA P100 GPU accelerator. Each NVIDIA P100
 GPU has 3,584 CUDA cores and 16 GB CoWoS HBM2 memory. The P100 GPU is the
 based on the new Pascal architecture and an extremely high bandwidth
-(732 GB/s) stacked memory architecture. In addition, M2 has one
-ever-broadening set of drop-in replacement libraries and ever easier to
+(732 GB/s) stacked memory architecture. In the summer of 2019, three additional
+nodes were added with eight NVIDIA Tesla V100 GPUs each. Each GPU has 32 GB of
+CoWoS HBM2 memory, 5,120 NVIDIA CUDA cores, and 640 NVIDIA Tensor cores. In addition,
+M2 has one ever-broadening set of drop-in replacement libraries and ever easier to
 implement CUDA-based programming environments, make GPU-based
 acceleration significantly more approachable for many computationally
 intensive applications.

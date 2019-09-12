@@ -18,8 +18,8 @@ from 3:00 to 5:00 PM. Register `here
 ============ ===================================================================================================================
 Date         Workshop
 ============ ===================================================================================================================
-September 4  Introduction to Using M2
-September 11 Vectorization Using OpenMP
+September 4  `Introduction to Using M2 <https://smu.box.com/s/sp3wygsrifqssazyrt5g7ume1bbnz3n8>`__
+September 11 `Vectorization Using OpenMP <https://smu.box.com/s/w2e0plqk0n3pm8i9ydkyx00ue06unmtk>`__
 September 18 R Workflows on M2
 September 25 Using Git and GitHub
 October 2    Introduction to Using M2

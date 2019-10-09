@@ -20,10 +20,10 @@ Date         Workshop
 ============ ===================================================================================================================
 September 4  `Introduction to Using M2 <https://smu.box.com/s/sp3wygsrifqssazyrt5g7ume1bbnz3n8>`__
 September 11 `Vectorization Using OpenMP <https://smu.box.com/s/w2e0plqk0n3pm8i9ydkyx00ue06unmtk>`__
-September 18 R Workflows on M2
-September 25 Using Git and GitHub
-October 2    Introduction to Using M2
-October 9    Python Workflows on M2
+September 18 `R Workflows on M2 <https://smu.box.com/s/0t7i83av60b6zt6b9s4bgq51c425lkrc>`__
+September 25 Using Git and GitHub (`Introduction <http://faculty.smu.edu/csc/workshops/2019/summer/hpc/session_8.html>`__ and `Git <https://git-scm.com/book/en/v1/Getting-Started-Git-Basics>`__)
+October 2    `Introduction to Using M2 <https://smu.box.com/s/sp3wygsrifqssazyrt5g7ume1bbnz3n8>`__
+October 9    `Python Workflows on M2 <https://smu.box.com/s/6h2rtq3alfc07hz5tzjvzniow5qljmtr>`__
 October 16   Hybrid MPI with OpenMP and OpenACC
 October 23   Using Machine Learning Toolkits on M2
 October 30   Parallel Architecture Abstraction Via OCCA and RAJA

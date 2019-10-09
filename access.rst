@@ -26,7 +26,7 @@ generally the steps are as follows.
 Setting Up Key-Based Authentication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: common/ssh_key_setup_unix.rst
+.. include:: common/ssh_key_setup_linux.rst
 
 macOS
 -----
@@ -50,7 +50,7 @@ The SSH steps are generally as follows:
 Setting Up Key-Based Authentication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: common/ssh_key_setup_unix.rst
+.. include:: common/ssh_key_setup_macos.rst
 
 Windows
 -------

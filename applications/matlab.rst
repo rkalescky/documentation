@@ -62,10 +62,15 @@ MATLAB Installation
 Setting Up SSH Keys for Passwordless Access
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Linux and macOS (and Other UNIX-Like Environments)
-""""""""""""""""""""""""""""""""""""""""""""""""""
+Linux
+"""""
 
-.. include:: ../common/ssh_key_setup_unix.rst
+.. include:: ../common/ssh_key_setup_linux.rst
+
+macOS
+"""""
+
+.. include:: ../common/ssh_key_setup_macos.rst
 
 Windows Using Putty
 """""""""""""""""""

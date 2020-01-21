@@ -10,8 +10,8 @@ with the cluster. New users are encouraged to take advantage of the
 introductory "Introduction to Using M2" workshop that will be given once
 monthly during the semester.
  
-Workshops will be given weekly on Tuesday's in Fondren Library East Room 110
-from 2:00 to 4:00 PM. There will not a workshop on March 17.
+Workshops will be given weekly on Tuesdays in Fondren Library East Room 110
+from 2:00 to 4:00 PM. There will not be a workshop on March 17.
 
 Register `here <https://smu.az1.qualtrics.com/jfe/form/SV_0upXVKd3dcnmLBP>`__!
 

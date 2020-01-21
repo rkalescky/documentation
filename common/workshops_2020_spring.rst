@@ -20,7 +20,7 @@ Register `here <https://smu.az1.qualtrics.com/jfe/form/SV_0upXVKd3dcnmLBP>`__!
 =========== =============================================================
 Date               Workshop
 =========== =============================================================
-January 21  M2 Introduction
+January 21  `M2 Introduction`_
 January 28  Introduction to LAPACK and BLAS
 February 4  Text Mining with Python on M2 (Lead by Dr. Eric Godat)
 February 11 Using the New HPC Portal
@@ -36,4 +36,6 @@ April 14    Introduction to Parallelization Using OpenMP and OpenACC
 April 21    Profiling Applications on M2
 April 28    Improving Code Vectorization
 =========== =============================================================
+
+.. _M2 Introduction: https://smu.box.com/s/bhojkoyu9t3f3fy00kn1yov3lqms42p0
 

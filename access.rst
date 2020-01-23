@@ -5,6 +5,11 @@
 Access
 ######
 
+HPC OnDemand Web Portal
+=======================
+
+ManeFrame II can be accessed directly from a browser via the :doc:`HPC OnDemand Web Portal <portal>`.
+
 Terminal Access via SSH
 =======================
 

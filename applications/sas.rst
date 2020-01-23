@@ -22,27 +22,7 @@ Running SAS Interactively with the Graphical User Interface
 -----------------------------------------------------------
 
 The SAS graphical user interface can be run directly off of ManeFrame II (M2)
-compute nodes using X11 forwarding.
-
-Running SAS Graphical User Interface via X11 Forwarding
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Running the SAS graphical user interface via X11 requires SSH with X11
-forwarding and SFTP access.
-
-1. Log into the cluster using SSH with X11 forwarding enabled and run
-   the following commands at the command prompt.
-2. ``module load sas`` to enable access to SAS.
-3. ``srun -p <partition and options> --x11=first --pty sas`` where
-   ``<partition and options>`` is the partition and associated Slurm
-   flags for each partition outlined above.
-
-**Example:**
-
-.. code:: bash
-
-       module load sas
-       srun -p htc --exclusive --mem=6G --x11=first --pty sas
+compute nodes using the `HPC OnDemand Web Portal <portal>`_.
 
 Running SAS Non-Interactively in Batch Mode
 -------------------------------------------

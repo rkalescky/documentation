@@ -31,40 +31,8 @@ Python and package versions to be installed as needed.
 Running Python Interactively with Jupyter Notebooks
 ---------------------------------------------------
 
-Jupyter Notebooks can be run directly off of M2 compute nodes using
-X11 forwarding or via SSH port forwarding.
-
-Running Jupyter Notebooks via SSH Port Forwarding
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1. Log into the cluster.
-2. Change to your home directory, i.e. ``cd``.
-3. Copy the Jupter Notebooks Slurm submit script to your home directory, ``cp /hpc/examples/jupyter/jupyter_notebook.sbatch .``.
-4. Edit the copied script as needed to change the different qeueues, the default is htc.
-5. Submit the job, ``sbatch jupyter_notebook.sbatch``.
-6. After job has *started*, wait for about two minutes.
-7. Once the job has run for about two minutes, look into the job's output file, which should be named ``jupyter_<slurm_job_id_number>.out`` using more, e.g. ``cat jupyter_2658923.out`` if the ``<slurm_job_id_number>`` is "2658923".
-8. Follow the directions given in the output file to access the Jupyter Notebook using your local web browser.
-
-Running Jupyter Notebooks via X11 Forwarding
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Running Jupyter Notebooks via X11 requires SSH with X11 forwarding and SFTP
-access.
-
-1. Log into the cluster using SSH with X11 forwarding enabled and run
-   the following commands at the command prompt.
-2. ``module load python`` to enable access to.
-3. ``srun -p <partition and options> --x11=first --pty jupyter notebook`` where
-   ``<partition and options>`` is the partition and associated Slurm
-   flags for each partition outlined above.
-
-**Example:**
-
-.. code:: bash
-
-       module load rstudio
-       srun -p htc --mem=6G --x11=first --pty jupyter notebook
+Jupyter Notebooks can be run directly off of M2 compute nodes using the `HPC
+OnDemand Web Portal <portal>`_.
 
 Running Python Non-Interactively in Batch Mode
 ----------------------------------------------

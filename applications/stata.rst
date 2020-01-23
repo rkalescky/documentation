@@ -32,29 +32,7 @@ Running STATA Interactively with the Graphical User Interface
 -------------------------------------------------------------
 
 The STATA graphical user interface can be run directly off of ManeFrame II (M2)
-compute nodes using X11 forwarding.
-
-Running STATA Graphical User Interface via X11 Forwarding
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Running the STATA graphical user interface via X11 requires SSH with X11
-forwarding and SFTP access.
-
-1. Log into the cluster using SSH with X11 forwarding enabled and run
-   the following commands at the command prompt.
-2. ``module load stata`` to enable access to STATA.
-3. ``srun -p <partition and options> --x11=first --pty $SHELL`` where
-   ``<partition and options>`` is the partition and associated Slurm
-   flags for each partition outlined above.
-4. ``xstata &`` to launch STATA on the Slurm allocated resource.
-
-**Example:**
-
-.. code:: bash
-
-       module load stata
-       srun -p htc --exclusive --mem=6G --x11=first --pty $SHELL
-       xstata &
+compute nodes using the `HPC OnDemand Web Portal <portal>`_.
 
 Running STATA Non-Interactively in Batch Mode
 ---------------------------------------------

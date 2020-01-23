@@ -22,27 +22,7 @@ Running R Interactively with RStudio
 ------------------------------------
 
 The RStudio graphical user interface can be run directly off of
-ManeFrame II (M2) compute nodes using X11 forwarding.
-
-Running R Graphical User Interface via X11 Forwarding
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Running RStudio via X11 requires SSH with X11 forwarding and SFTP
-access.
-
-1. Log into the cluster using SSH with X11 forwarding enabled and run
-   the following commands at the command prompt.
-2. ``module load rstudio`` to enable access to R and RStudio.
-3. ``srun -p <partition and options> --x11=first --pty rstudio`` where
-   ``<partition and options>`` is the partition and associated Slurm
-   flags for each partition outlined above.
-
-**Example:**
-
-.. code:: bash
-
-       module load rstudio
-       srun -p htc --exclusive --mem=6G --x11=first --pty rstudio
+ManeFrame II (M2) compute nodes using the `HPC OnDemand Web Portal <portal>`_.
 
 Running R Non-Interactively in Batch Mode
 -----------------------------------------

@@ -19,6 +19,7 @@ Contents
    About <about>
    Accounts <accounts>
    Access <access>
+   Portal <portal>
    Usage <usage>
    Applications <applications>
    Development Tools <development_tools>

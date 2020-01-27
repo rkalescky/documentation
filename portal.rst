@@ -5,11 +5,14 @@
 HPC OnDemand Web Portal
 #######################
 
+HPC OnDemand provides an integrated, single access point for HPC resources on
+the ManeFrame II (M2) supercomputer.
+
 Accessing the Portal
 ====================
 
-Access to the HPC OnDemand web portal requires an existing ManeFrame II
-account, which can be requested as documented in :doc:`Accounts <accounts>`.
+Access to the HPC OnDemand web portal requires an existing M2 account, which
+can be requested as documented in :doc:`Accounts <accounts>`.
 
 #. Go to `hpc.smu.edu <https://hpc.smu.edu/>`_.
 #. Sign in using your SMU ID and SMU password
@@ -31,7 +34,7 @@ Remote Desktop
 #. Select "Launch noVNC in New Tab"
 #. Graphical applications can be run via the Terminal, e.g. ``module load
    comsol && comsol &``.
-#. When finished using the remode desktop instance, return to the "My
+#. When finished using the remote desktop instance, return to the "My
    Interactive Sessions" tab in your browser and select "Delete" and "Confirm",
    when prompted, to cancel the job on M2.
 
@@ -119,7 +122,7 @@ Shell Access
 ============
 
 #. Select "ManeFrame II Shell Access" from the "Clusters" drop-down menu. Note
-   that this shell access does not provide access to grpahical applications. If
+   that this shell access does not provide access to graphical applications. If
    needed, please use a :ref:`"Remote Desktop" <portal_remote_desktop>` instance.
 #. When finished using the shell, type ``exit`` and close the browser tab.
 

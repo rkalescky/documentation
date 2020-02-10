@@ -38,6 +38,13 @@ Remote Desktop
    Interactive Sessions" tab in your browser and select "Delete" and "Confirm",
    when prompted, to cancel the job on M2.
 
+.. raw:: html
+
+    <iframe
+    src="https://smu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=72acf55b-f2b7-4626-a953-ab58015d1d64&autoplay=false&offerviewer=false&showtitle=true&showbrand=false&start=0&interactivity=all"
+    width=600 height=338 style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
+    </iframe>
+
 MATLAB
 ------
 

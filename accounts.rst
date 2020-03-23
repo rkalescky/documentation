@@ -8,19 +8,13 @@ Accounts
 Request an Account
 ==================
 
-SMU faculty/staff can request an account by sending an email (if you are a
-student or postdoc please ask your supervisor, sponsor, or adviser to send
-an email) to \ `SMU HPC Admins <mailto:help@smu.edu?subject=HPC%20Account%20Request>`__ with the following details.
+SMU faculty/staff can request an account by filling out the `New Account
+Form`_. If you are a student or postdoc please ask your supervisor, sponsor, or
+adviser to submit the `New Account Form`_.
 
--  Full Name
--  Department
--  A valid SMU email for SMU faculty/staff/student/post-doc
--  Duration for which the account should remain active
--  If the account is for a class, course number, name, and professor
-
-If you are an external research collaborator please have your sponsor
-request a sponsored account at \ help@smu.edu. Once your account has
-been created please request HPC access at \ `SMU HPC Admins <mailto:help@smu.edu?subject=HPC%20Account%20Request>`__.
+If you are an external research collaborator please have your sponsor request a
+sponsored account at `help@smu.edu <mailto:help@smu.edu>`__. Once the account
+has been created the sponor can request an M2 account via `New Account Form`_.
 
 Reset Account Password
 ======================
@@ -36,9 +30,9 @@ for all SMU services such as email as well.
 Terminate an Existing Account
 =============================
 
-Please send a request to the \ `SMU HPC
-Admins <mailto:help@smu.edu?subject=HPC>`__ with a short explanation of
-reason for the termination.
+Please send a request to the `SMU HPC Admins
+<mailto:help@smu.edu?subject=HPC>`__ with a short explanation of reason for the
+termination.
 
 Account and Account Password Sharing Policy
 ===========================================
@@ -47,11 +41,5 @@ No two individuals should share the same ManeFrame II account, nor should
 two individuals share the password of the same account. Each individual is
 entitled to have their own account hence please request one.
 
-.. raw:: html
+.. _New Account Form: https://smu.az1.qualtrics.com/jfe/form/SV_6WIK4HsRuE4N6JL
 
-   <div>
-
-
-.. raw:: html
-
-   </div>

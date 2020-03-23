@@ -22,11 +22,11 @@ Date               Workshop
 =========== =============================================================
 January 21  `M2 Introduction`_
 January 28  Introduction to LAPACK and BLAS
-February 4  Text Mining with Python on M2 (Lead by Dr. Eric Godat)
+February 4  `Text Mining with Python on M2 (Lead by Dr. Eric Godat) <https://github.com/SouthernMethodistUniversity/Text_Mining_Python>`__
 February 11 Using the New HPC Portal
 February 18 Using GitHub
 February 25 Writing Portable Accelerator Code with KOKKOS, RAJA, and OCCA
-March 3     M2 Introduction
+March 3     `M2 Introduction`_
 March 10    Introduction to Parallelization Using MPI
 March 17    No Workshop Spring Break
 March 24    Writing High Performance Python Code

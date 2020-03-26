@@ -29,7 +29,7 @@ February 25 Writing Portable Accelerator Code with KOKKOS, RAJA, and OCCA
 March 3     `M2 Introduction`_
 March 10    Introduction to Parallelization Using MPI
 March 17    No Workshop Spring Break
-March 24    Writing High Performance Python Code
+March 24    `Writing High Performance Python Code <https://github.com/SouthernMethodistUniversity/fast_python>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cf8304c1-73f7-4767-ac64-ab8a0005a8b8>`__)
 March 31    Creating Portable Environments with Docker and Singularity
 April 7     M2 Introduction
 April 14    Introduction to Parallelization Using OpenMP and OpenACC

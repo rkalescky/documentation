@@ -10,8 +10,8 @@ with the cluster. New users are encouraged to take advantage of the
 introductory "Introduction to Using M2" workshop that will be given once
 monthly during the semester.
  
-Workshops will be given weekly on Tuesdays in Fondren Library East Room 110
-from 2:00 to 4:00 PM. There will not be a workshop on March 17.
+Workshops will be given weekly on Tuesdays via Zoom from 2:00 to 4:00 PM. There
+will not be a workshop on March 17.
 
 Register `here <https://smu.az1.qualtrics.com/jfe/form/SV_0upXVKd3dcnmLBP>`__!
 
@@ -30,7 +30,7 @@ March 3     `M2 Introduction`_
 March 10    Introduction to Parallelization Using MPI
 March 17    No Workshop Spring Break
 March 24    `Writing High Performance Python Code <https://github.com/SouthernMethodistUniversity/fast_python>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cf8304c1-73f7-4767-ac64-ab8a0005a8b8>`__)
-March 31    Creating Portable Environments with Docker and Singularity
+March 31    `Creating Portable Environments with Singularity and Docker <https://github.com/SouthernMethodistUniversity/singularity_docker>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a07cbab4-7ed1-4839-8054-ab900093f525>`__)
 April 7     M2 Introduction
 April 14    Introduction to Parallelization Using OpenMP and OpenACC
 April 21    Profiling Applications on M2

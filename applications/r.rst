@@ -22,7 +22,7 @@ Running R Interactively with RStudio
 ------------------------------------
 
 The RStudio graphical user interface can be run directly off of
-ManeFrame II (M2) compute nodes using the `HPC OnDemand Web Portal <portal>`_.
+ManeFrame II (M2) compute nodes using the :doc:`HPC OnDemand Web Portal <../portal>`.
 
 Running R Non-Interactively in Batch Mode
 -----------------------------------------

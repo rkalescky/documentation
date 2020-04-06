@@ -32,7 +32,7 @@ Running STATA Interactively with the Graphical User Interface
 -------------------------------------------------------------
 
 The STATA graphical user interface can be run directly off of ManeFrame II (M2)
-compute nodes using the `HPC OnDemand Web Portal <portal>`_.
+compute nodes using the :doc:`HPC OnDemand Web Portal <../portal>`.
 
 Running STATA Non-Interactively in Batch Mode
 ---------------------------------------------

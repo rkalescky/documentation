@@ -31,8 +31,8 @@ Python and package versions to be installed as needed.
 Running Python Interactively with Jupyter Notebooks
 ---------------------------------------------------
 
-Jupyter Notebooks can be run directly off of M2 compute nodes using the `HPC
-OnDemand Web Portal <portal>`_.
+Jupyter Notebooks can be run directly off of M2 compute nodes using the :doc:`HPC
+OnDemand Web Portal <../portal>`.
 
 Running Python Non-Interactively in Batch Mode
 ----------------------------------------------

@@ -32,7 +32,7 @@ March 17    No Workshop Spring Break
 March 24    `Writing High Performance Python Code <https://github.com/SouthernMethodistUniversity/fast_python>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cf8304c1-73f7-4767-ac64-ab8a0005a8b8>`__)
 March 31    `Creating Portable Environments with Singularity and Docker <https://github.com/SouthernMethodistUniversity/singularity_docker>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a07cbab4-7ed1-4839-8054-ab900093f525>`__)
 April 7     `M2 Introduction`_ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b003cdc1-6aff-4281-bc97-ab970012d721>`__)
-April 14    Introduction to Parallelization Using OpenMP and OpenACC
+April 14    `Introduction to Parallelization Using OpenMP and OpenACC <https://smu.box.com/s/2asso6grqd7qmjnthhwty16bttqjizp6>`__
 April 21    Profiling Applications on M2
 April 28    Improving Code Vectorization
 =========== =============================================================

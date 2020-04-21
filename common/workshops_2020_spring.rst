@@ -33,7 +33,7 @@ March 24    `Writing High Performance Python Code <https://github.com/SouthernMe
 March 31    `Creating Portable Environments with Singularity and Docker <https://github.com/SouthernMethodistUniversity/singularity_docker>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a07cbab4-7ed1-4839-8054-ab900093f525>`__)
 April 7     `M2 Introduction`_ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b003cdc1-6aff-4281-bc97-ab970012d721>`__)
 April 14    `Introduction to Parallelization Using OpenMP and OpenACC <https://smu.box.com/s/2asso6grqd7qmjnthhwty16bttqjizp6>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=82131be9-a393-4bfe-87ef-ab9e002035b8>`__)
-April 21    Profiling Applications on M2
+April 21    `Profiling Applications on M2 <https://github.com/SouthernMethodistUniversity/profiling_applications>`__
 April 28    Improving Code Vectorization
 =========== =============================================================
 

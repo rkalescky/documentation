@@ -99,6 +99,11 @@ JupyterLab
 #. Select "JupyterLab" from the "Interactive Apps" drop-down menu.
 #. Select options required for your remote desktop instance. These options are the
    same as those requested via a standard Slurm script on M2.
+
+    #. Custom Python environments can be used by adding the appropriate
+       environment activation command to the "Custom environment settings" field, e.g.
+       `conda activate custom_environment`. The environment must contain Jupyterlab.
+
 #. Select "Launch"
 #. Wait for the job to start on M2. When the job starts a new button "Connect 
    to JupyterLab" button will appear.

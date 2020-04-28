@@ -34,7 +34,7 @@ March 31    `Creating Portable Environments with Singularity and Docker <https:/
 April 7     `M2 Introduction`_ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b003cdc1-6aff-4281-bc97-ab970012d721>`__)
 April 14    `Introduction to Parallelization Using OpenMP and OpenACC <https://smu.box.com/s/2asso6grqd7qmjnthhwty16bttqjizp6>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=82131be9-a393-4bfe-87ef-ab9e002035b8>`__)
 April 21    `Profiling Applications on M2 <https://github.com/SouthernMethodistUniversity/profiling_applications>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=17ffc810-4d94-42d5-95ba-aba500021e77>`__)
-April 28    `Improving Code Vectorization <https://smu.box.com/s/srrddzba2d8g91voxl594slghgzrge3k>`__
+April 28    `Improving Code Vectorization <https://smu.box.com/s/srrddzba2d8g91voxl594slghgzrge3k>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6edb96bc-5f0e-4eb2-b5f9-abab0162ae96>`__)
 =========== =============================================================
 
 .. _M2 Introduction: https://smu.box.com/s/bhojkoyu9t3f3fy00kn1yov3lqms42p0

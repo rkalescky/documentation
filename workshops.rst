@@ -5,6 +5,7 @@
 Workshops
 #########
 
+.. include:: common/workshops_2020_summer.rst
 .. include:: common/workshops_2020_spring.rst
 .. include:: common/workshops_2019_fall.rst
 

@@ -1,16 +1,27 @@
 ManeFrame II Documentation
 ==========================
 
-The mission of the Center for Scientific Computation (CSC) at Southern Methodist University (SMU) is to stimulate interdisciplinary education and research in simulation-based engineering and science. We are motivated by the fact that computer simulation has become an essential component of research in most disciplines in engineering and science, and that advances in computing, networking, and data storage technologies are likely to accelerate this trend. At the same time, it is recognized that our nation's position of dominance in this area can no longer be taken for granted. Thus we believe that the education of the next generation of computational scientists and engineers is an urgent challenge which SMU must accept. 
+The mission of the Center for Research Computing at Southern Methodist
+University is to support research and education enabled by high-performance
+computing technology. We are motivated by the fact that computer simulation and
+data analysis has become an essential facilitator of discovery in most
+disciplines, and that advances in computing, networking, and data storage
+technologies are likely to accelerate this trend.
 
-Goals of the CSC
-----------------
-
-- Education and training focused on high performance computing algorithms, software, and hardware.
-- Formation of interdisciplinary research teams addressing cutting-edge applications.
-- Rapid communication of faculty and student research accomplishments.
+The primary purposes of the Center are to: (i.) provide a state-of-the-art
+research computing infrastructure for SMU faculty and students; (ii.) provide
+training and support to faculty and students in the use of the Center's
+resources and external facilities, including awarding certificates in high-
+performance computing based on a completion of assignments associated with
+center's workshops; (iii.) provide the mechanism for faculty governance of
+advanced research computing and related educational activities ; (iv.)
+stimulate multidisciplinary research involving computation; (v.) support and
+develop educational programs involving computation; (vi.) publicize faculty and
+student research involving computation; and (vii.) engage with local government
+and industry on relevant research projects.
 
 Contribute
 ----------
 
 Suggestions and corrections are welcome as issues or pull requests.
+

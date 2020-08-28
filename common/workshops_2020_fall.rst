@@ -1,13 +1,13 @@
 Fall 2020
 =========
 
-The Fall 2020 CSC workshop series will provide a hands-on experience that will
-guide researchers from the basics of using SMU's supercomputing resources to
-advanced parallelization and application specific usage. The topics will cover
-information useful for researchers to quickly begin to use the advanced compute
-capabilities provided with the cluster. New users are encouraged to take
-advantage of the introductory "M2 Introduction" workshop that
-will be given once monthly during the semester.
+The Fall 2020 Center for Research Computing workshop series will provide a
+hands-on experience that will guide researchers from the basics of using SMU's
+supercomputing resources to advanced parallelization and application specific
+usage. The topics will cover information useful for researchers to quickly
+begin to use the advanced compute capabilities provided with the cluster. New
+users are encouraged to take advantage of the introductory "M2 Introduction"
+workshop that will be given once monthly during the semester.
 
 Workshops will be given asynchronously and posted weekly. Open workshop help
 sessions will be held each Wednesdays via Zoom from 2:00 to 4:00 PM. Register

@@ -16,6 +16,7 @@ Faculty
 
 * `Nathan Balke <http://faculty.smu.edu/nbalke/BalkeWebpageindex.htm>`_ (Economics)
 * `Dick Barr <http://faculty.smu.edu/barr/>`_ (Engineering Management, Information, and Systems)
+* `Doran Bennett <http://www.mesosciencelab.com/>`__ (Chemistry)
 * `Ali Beskok <https://www.smu.edu/Lyle/Departments/ME/People/Faculty/BeskokAli>`_ (Mechanical Engineering)
 * `Wei Cai <https://people.smu.edu/cai/>`_ (Mathematics)
 * `Marc Christensen <http://lyle.smu.edu/%7Empc/index.htm>`_ (Electrical Engineering)

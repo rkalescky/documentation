@@ -20,7 +20,7 @@ to receive Zoom coordinates.
 ============ ================================================ ============
 Date         Workshop                                         Level
 ============ ================================================ ============
-September 2  M2 Introduction & New Storage Workflow           Introductory
+September 2  `M2 Introduction & New Storage Workflow`_        Introductory
 September 9  Python Workflows on M2                           Introductory
 September 16 R Workflows on M2                                Introductory
 September 23 Julia Workflows on M2                            Introductory
@@ -30,7 +30,9 @@ October 14   Introduction to MPI                              Intermediate
 October 21   Introduction to OpenMP                           Intermediate
 October 28   Introduction to OpenACC                          Intermediate
 November 4   M2 Introduction & New Storage Workflows          Introductory
-November 11  No Workshop (SC20) 
+November 11  No Workshop (SC20)                               NA
 November 18  Introduction to Standard C++ Parallel Algorithms Advanced
 ============ ================================================ ============
+
+.. _M2 Introduction & New Storage Workflow: https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b003cdc1-6aff-4281-bc97-ab970012d721
 

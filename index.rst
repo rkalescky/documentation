@@ -14,7 +14,7 @@ Contents
    Usage <usage>
    Applications <applications>
    Development Tools <development_tools>
-   Members <members>
+   Fellows <fellows>
    Programs and Policies <programs_and_policies>
    Frequently Asked Questions <faqs>
    Workshops <workshops>

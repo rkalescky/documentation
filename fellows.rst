@@ -1,8 +1,8 @@
-.. _members:
+.. _fellows:
 
 :tocdepth: 3
 
-Members
+Fellows
 =======
 
 Administration
@@ -30,6 +30,7 @@ Faculty
 * `Weihua Geng <http://faculty.smu.edu/wgeng>`_ (Mathematics)
 * `Thomas Hagstrom <http://faculty.smu.edu/thagstrom/>`_ (Mathematics)
 * `Michael Hahsler <http://michael.hahsler.net/>`_ (Engineering Management, Information, and Systems)
+* `Karthik Babu Nattamai Kannan <https://www.smu.edu/cox/Our-People-and-Community/Faculty/Karthik-Babu-Nattamai-Kannan>`_ (Information Technology & Operations Management)
 * `Elfi Kraka <http://smu.edu/chemistry/kraka.asp>`_ (Chemistry)
 * `Jose Lage <https://www.smu.edu/Lyle/AboutUs/ContactsandDirectories/LageJose>`_ (Mechanical Engineering)
 * `Eric Larson <https://s2.smu.edu/~eclarson/index.html>`_ (Computer Science and Engineering)

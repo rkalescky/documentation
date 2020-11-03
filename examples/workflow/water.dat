@@ -1,0 +1,14 @@
+memory 4 gb
+
+molecule h2o {
+  O 
+  H 1 0.96
+  H 1 0.96 2 104.5
+}
+
+set basis aug-cc-pVDZ
+optimize('b3lyp')
+e, wfn = frequencies('b3lyp', return_wfn=True)
+fchk_writer = psi4.core.FCHKWriter(wfn)
+fchk_writer.write('water.fchk')
+

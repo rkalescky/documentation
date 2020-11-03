@@ -18,6 +18,7 @@ Contents
    Programs and Policies <programs_and_policies>
    Frequently Asked Questions <faqs>
    Workshops <workshops>
+   Work Storage Migration <work>
 
 .. toctree::
    :hidden:

@@ -5,12 +5,6 @@
 Fellows
 =======
 
-Administration
---------------
-
-* Director: `Thomas Hagstrom <http://faculty.smu.edu/thagstrom/>`_
-* HPC Applications Scientist: `Robert Kalescky <http://robert.kalescky.org/>`_
-
 Faculty
 -------
 
@@ -22,6 +16,7 @@ Faculty
 * `Marc Christensen <http://lyle.smu.edu/%7Empc/index.htm>`_ (Electrical Engineering)
 * `Thomas Coan <http://www.physics.smu.edu/%7Ecoan/>`_ (Physics)
 * `Jodi Cooley-Sekula <http://www.physics.smu.edu/cooley/>`_ (Physics)
+* `Bill Dillon <https://www.smu.edu/cox/Our-People-and-Community/Faculty/Bill-Dillon>`__ (Marketing)
 * `Usama El Shamy <https://www.smu.edu/Lyle/Departments/CEE/People/Faculty/ElShamyUsama>`_ (Environmental and Civil Engineering)
 * `Daniel W. Engels <https://datascience.smu.edu/about/leadership-and-faculty/profile/daniel-engels/>`_ (Computer Science and Engineering)
 * `Thomas Fomby <http://faculty.smu.edu/tfomby/>`_ (Economics)

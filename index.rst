@@ -20,6 +20,7 @@ Contents
    Programs and Policies <programs_and_policies>
    Frequently Asked Questions <faqs>
    Workshops <workshops>
+   Newsletters <newsletters>
    Work Storage Migration <work>
 
 .. toctree::

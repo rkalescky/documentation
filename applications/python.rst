@@ -26,13 +26,86 @@ system Python is available. Additional high performance implementations of
 Python are available via ``module load python/2`` or ``module load python/3``
 for Python 2.7 and Python 3.6 respectively. These Anaconda-based
 implementations also support conda environments, which allow for specific
-Python and package versions to be installed as needed.
+Python and package versions to be installed as needed. Additional, Python
+versions can be use via Anaconda and Spack.
+
+Custom Python Evironments and Package Installations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Python environments allow users to use specific versions of Python with the
+packages of their choice. The packages can be installed via `conda` or `pip`,
+depending on the type of environment being used.
+
+Anaconda Environments
+`````````````````````
+Anaconda environments are managed using `conda`, which is available via
+Anaconda installations such as `python/2` and `python/3` on ManeFrame II.
+
+The the example below a specific version of Python is installed along with the
+JupyterLab package and it's dependencies. The new environment is then loaded
+and then unloaded.
+
+.. code:: bash
+
+  module purge
+  module load python/3
+  conda create -y -n jupyter_37 -c conda-forge jupyterlab python=3.7
+  source activate ~/.conda/envs/jupyter_37
+  deactivate
+
+For more information on managing Python environments with `conda` see `here
+<https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`_.
+
+.. raw:: html
+
+    <iframe
+    src="https://smu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b687e8ad-f4c6-4330-b356-ace701266b3f&autoplay=false&offerviewer=false&showtitle=false&showbrand=false&start=0&interactivity=all"
+    width=600 height=338 style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
+    </iframe>
+
+Python Virtual Environments
+```````````````````````````
+
+Python 3 has native support for managing environments, which can be used with
+any Python 3 installation on ManeFrame II.
+
+In the example below a specific installation of Python, in this case from
+Spack, is used and then JupyterLab and it's dependencies are installed. The new
+environment is then loaded and then unloaded.
+
+.. code:: bash
+
+  module purge
+  module load spack gcc-9.2
+  source <(spack module tcl loads --dependencies python@3.7%gcc@9.2)
+  python3 -m venv ~/.venv/jupyter_37
+  source ~/.venv/jupyter_37/bin/activate
+  pip3 install --upgrade pip
+  pip3 install --upgrade jupyterlab
+  deactivate
+
+For more information on managing Python environments with Python virtual
+environments and `pip` see `here
+<https://docs.python.org/3/tutorial/venv.html>`_.
+
+.. raw:: html
+
+    <iframe
+    src="https://smu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=1f2662a9-e56e-43af-8159-ace701266b15&autoplay=false&offerviewer=false&showtitle=false&showbrand=false&start=0&interactivity=all"
+    width=600 height=338 style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
+    </iframe>
 
 Running Python Interactively with Jupyter Notebooks
 ---------------------------------------------------
 
 Jupyter Notebooks can be run directly off of M2 compute nodes using the :doc:`HPC
 OnDemand Web Portal <../portal>`.
+
+Anaconda environments and Python virtual environments can be used via the
+Portal provided that the installation includes JupyterLab as demonstrated
+above. In either case, the specific modules and then environment activatation
+can be done in the Portal's JupyterLab's "Additional environment modules to
+load" and "Custom environment settings" text fields respectively.
 
 Running Python Non-Interactively in Batch Mode
 ----------------------------------------------

@@ -20,7 +20,7 @@ session materials.
 ======== ================================================
 Date     Workshop                                        
 ======== ================================================
-March 4  ManeFrame II (M2) Introduction
+March 4  `ManeFrame II (M2) Introduction`_
 March 11 Intel oneAPI HPC Toolkit Overview
 March 18 Python Workflows on ManeFrame II (M2)
 March 25 NVIDIA HPC SDK Overview
@@ -31,3 +31,4 @@ April 22 Introduction to MPI
 April 29 Introduction to Standard C++ Parallel Algorithms
 ======== ================================================
 
+.. _ManeFrame II (M2) Introduction: https://smu.box.com/s/bhojkoyu9t3f3fy00kn1yov3lqms42p0

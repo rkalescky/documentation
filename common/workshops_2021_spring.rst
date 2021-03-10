@@ -9,9 +9,9 @@ begin to use the advanced compute capabilities provided with the cluster. New
 users are encouraged to take advantage of the introductory "ManeFrame II (M2)
 Introduction" workshop that will be given once monthly during the semester.
 
-Workshops will be given asynchronously and posted weekly. Open workshop help
-sessions will be held each Thursdays via Zoom from 12:00 to 2:00 PM. Register
-to receive Zoom coordinates.
+Workshops will be held each Thursday via Zoom from 12:00 to 2:00 PM. Register
+to receive Zoom coordinates. Sessions will be recorded and posted along with
+session materials.
 
 `Register! <https://smu.az1.qualtrics.com/jfe/form/SV_dnm11WL26HOyeLY>`__
 

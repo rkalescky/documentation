@@ -5,6 +5,7 @@
 Newsletters
 ###########
 
+- `2021 Q1 <https://smu.box.com/s/p1a180a44an3naud2yu0bcpdw4jsg559>`__
 - `2020 Q2 <https://smu.box.com/s/psjkf1fmcu069lqie83sm589f3qiyprb>`__
 - `2020 Q1 <https://smu.box.com/s/ifstlopg1cq12150q9fufly1k5vpc6d4>`__
 - `2019 Q2 <https://smu.box.com/s/02wiqhh73iqpf40shu7cvgzkf70j29wf>`__

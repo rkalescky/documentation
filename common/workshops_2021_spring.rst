@@ -21,7 +21,7 @@ session materials.
 Date     Workshop                                        
 ======== ================================================
 March 4  `ManeFrame II (M2) Introduction`_
-March 11 Intel oneAPI HPC Toolkit Overview
+March 11 `Intel oneAPI HPC Toolkit Overview <https://smu.box.com/s/kqdizcleu3km30faysg740d58tedxj1l>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4a08969c-3454-40ea-ba74-acec00f03bad>`__)
 March 18 Python Workflows on ManeFrame II (M2)
 March 25 NVIDIA HPC SDK Overview
 April 1  ManeFrame II (M2) Introduction

@@ -5,6 +5,8 @@
 Frequently Asked Questions
 ##########################
 
+.. include:: common/acknowledgement.rst
+
 Why is the job only allocated ~7 GB?
 ====================================
 

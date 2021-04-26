@@ -7,3 +7,5 @@ About
 
 .. include:: common/description_long.rst
 
+.. include:: common/acknowledgement.rst
+

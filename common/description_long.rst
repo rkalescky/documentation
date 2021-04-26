@@ -42,7 +42,7 @@ their work.
 .. _standard_nodes:
 
 Standard-, Medium-, and High- Memory Compute Nodes
---------------------------------------------------
+==================================================
 
 Each of the 176 standard compute nodes has 36 cores, 256 GB of memory,
 and 100 Gb/s networking. Specifically, these nodes contain dual Intel
@@ -63,7 +63,7 @@ improvements to existing computationally or memory intensive workflows.
 .. _p100_nodes:
 
 Accelerator Nodes with NVIDIA GPUs
-----------------------------------
+==================================
 
 M2 contains 36 accelerator nodes with NVIDIA GPUs are configured with dual Intel
 Xeon E5-2695v4 2.1 GHz 18-core “Broadwell” processors, 256 GB of
@@ -81,7 +81,7 @@ intensive applications.
 .. _knl_nodes:
 
 Many-Core Nodes with Intel Xeon Phi Processors
-----------------------------------------------
+==============================================
 
 The 36 many-core nodes are configured with Intel Xeon Phi 7230 (also
 known as Knights Landing or KNL) processors and 385 GB of DDR4-2400
@@ -94,7 +94,7 @@ therefore do not require specialized programming languages or
 directives/pragmas.
 
 Virtual Desktop Nodes
----------------------
+=====================
 
 The five virtual desktop nodes will allow researchers remote desktop
 access to high-performance compute capability. These nodes can be used
@@ -106,7 +106,7 @@ applications. Each node has dual Intel Xeon E5-2695v4 2.1 GHz 18-core
 Quadro M5000 GPU.
 
 High-Performance Network
-------------------------
+========================
 
 The cluster provides high-speed and low-latency EDR InfiniBand
 networking. Every node is equipped with a Mellanox ConnectX-5 InfiniBand
@@ -118,7 +118,7 @@ calls, thereby reducing the load on the processors, freeing them to work
 on other computations.
 
 High-Performance and Archival Storage
--------------------------------------
+=====================================
 
 The cluster has three new storage systems. The first storage system will
 be an NFS based storage providing space for home directories,
@@ -134,16 +134,16 @@ usable disk based archive space that includes off-site backup for
 disaster recovery.
 
 Faculty Partner Nodes
----------------------
+=====================
 
-.. include:: /common/faculty_partnership_purpose.rst
+.. include:: common/faculty_partnership_purpose.rst
 
 See :ref:`Programs and Policies <programs_and_policies>` for more information.
 
 .. _fp_hagstrom:
 
 *Professor Thomas Hagstrom (Mathematics)*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------
 
 Professor Hagstrom has one node that is available as port of M2. This node has
 dual Intel Xeon E5-2680v3 2.50 GHz 12-core "Sandy Bridge" processors, 128 GB of
@@ -155,7 +155,7 @@ The queue for these nodes, ``fp-gpgpu-2``, is generally available to M2 users.
 .. _fp_minsker:
 
 *Professor Barbara Minsker (Civil and Environmental Engineering)*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------------------------------
 
 Professor Minsker has two nodes that are availabe as part of M2. These nodes
 each have dual Intel Xeon Gold 6148 2.40 GHz 20-core "Skylake" processors, 384

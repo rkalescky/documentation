@@ -27,8 +27,8 @@ March 25 `NVIDIA HPC SDK Overview <https://smu.box.com/s/i1ry2pl0edjcifijmf90y4m
 April 1  `ManeFrame II (M2) Introduction`_ (`Recording`_)
 April 8  `R Workflows on ManeFrame II (M2) <https://smu.box.com/s/1682ym14njm9edpir2w9lvyvascweu10>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3d7f2aef-7584-4c34-8562-ad04010c459a>`__)
 April 15 `Introduction to OpenMP and OpenACC <https://smu.box.com/s/ni2mpa30zi0e2o43oiyj2e4hv9l8lglp>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=206a8c88-667a-49bf-b2f4-ad0c00e51444>`__)
-April 22 Introduction to MPI
-April 29 Introduction to Standard C++ Parallel Algorithms
+April 22 `Introduction to MPI <https://smu.box.com/s/gsvn78nli0jyn5jxcb5n3tai7vbd6bya>`__
+April 29 `Introduction to Standard C++ Parallel Algorithms <https://smu.box.com/s/aii0le5mj6sp6v0nzews6e3uidu6x7d0>`__
 ======== ================================================
 
 .. _ManeFrame II (M2) Introduction: https://smu.box.com/s/38pn3fdeyzj0zjxxofzlut3gj24ipwwk

@@ -61,22 +61,6 @@ MATLAB
    Interactive Sessions" tab in your browser and select "Delete" and "Confirm", 
    when prompted, to cancel the job on M2.
 
-SAS
----
-
-#. Select "SAS" from the "Interactive Apps" drop-down menu.
-#. Select options required for your remote desktop instance. These options are the
-   same as those requested via a standard Slurm script on M2.
-#. Select "Launch"
-#. Wait for the job to start on M2. When the job starts a new button "Launch
-   noVNC in New Tab" button will appear.
-#. Select "Launch noVNC in New Tab"
-#. The SAS graphical interface will be presented and running on the M2 
-   resource requested.
-#. When finished using the SAS instance, return to the "My
-   Interactive Sessions" tab in your browser and select "Delete" and "Confirm",
-   when prompted, to cancel the job on M2.
-
 Jupyter Notebook
 ----------------
 

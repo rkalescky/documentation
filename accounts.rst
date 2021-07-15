@@ -8,13 +8,27 @@ Accounts
 Request an Account
 ==================
 
-SMU faculty/staff can request an account by filling out the `New Account
-Form`_. If you are a student or postdoc please ask your supervisor, sponsor, or
-adviser to submit the `New Account Form`_.
+Accounts for Individuals with an SMU ID
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are an external research collaborator please have your sponsor request a
-sponsored account at `help@smu.edu <mailto:help@smu.edu>`__. Once the account
-has been created the sponor can request an M2 account via `New Account Form`_.
+-  SMU faculty/staff can request an account by filling out the `New
+   Account
+   Form <https://smu.az1.qualtrics.com/jfe/form/SV_6WIK4HsRuE4N6JL>`__.
+-  If you are a student or postdoc please ask your supervisor, sponsor,
+   or adviser to request an account via the `New Account
+   Form <https://smu.az1.qualtrics.com/jfe/form/SV_6WIK4HsRuE4N6JL>`__.
+
+Accounts for Individuals without an SMU ID or Sponsored ID
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#. The sponsor must request an SMU ID or Sponsored ID and have that
+   account activated before sponsor can request ManeFrame II (M2) access
+   for the individual. Please submit an Account Request via the `Online
+   Service Center <https://help.smu.edu/User/Dashboard>`__.
+#. Once the individual's SMU ID or Sponsored ID has been created and
+   activated the sponsor can request an ManeFrame II (M2) account for
+   the individual via the `New Account
+   Form <https://smu.az1.qualtrics.com/jfe/form/SV_6WIK4HsRuE4N6JL>`__.
 
 Reset Account Password
 ======================
